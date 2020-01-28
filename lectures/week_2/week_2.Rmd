@@ -90,7 +90,19 @@ visibility: inherit; }
 
 </style>
 
+<section>
+<blockquote>Human progress is neither automatic nor inevitable... Every step toward the goal of justice requires sacrifice, suffering, and struggle; the tireless exertions and passionate concern of dedicated individuals.
+</blockquote>
+
+Martin Luther King, Jr.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Civil_Rights_March_on_Washington%2C_D.C._%28Dr._Martin_Luther_King%2C_Jr._and_Mathew_Ahmann_in_a_crowd.%29_-_NARA_-_542015_-_Restoration.jpg" width="500px"/>
+</section>
+
 # Week 2
+
+## Quick housekeeping item
+- Do we want to change rooms?
 
 # Things I should have mentioned last week
 
@@ -98,12 +110,16 @@ visibility: inherit; }
 > - Based on other courses, some wiki content overlaps with course at University of Washington
 >	- There may be inconsistencies or errors
 >	- If you can, fix them! 
+> - Order of readings and assignments
+> - Class time is review of readings + difficulties with HW + start on next week's HW?
+> - How to encourage interaction? Work in pairs?
 
 ## Brightspace
 
 > - Readings
 > - Discussion board
 > - Example Projects
+> - Names and netids of auditing students
 
 
 ## Additional Readings

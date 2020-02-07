@@ -92,39 +92,46 @@ visibility: inherit; }
 
 ## Weekly Dad Joke
 
-Why did the nearsighted man fall in the well?
+- My girlfriend left me because I'm insecure...
 
+> - Nevermind, she's back. She just went to the bathroom.
+
+## Housekeeping
+> - Feedback is on Brightspace
+> - Self assessment reflections
+> - Food?
+> - Study/HW groups
 
 ## Questions from homework
-> - Try/except
-> - Indenting
-> - Conditionals / Control Flow
-> - Functions
 
-## Environment
 
 ## Solution sharing
-> -	Ch. 1: 1 + 6
-> - Ch. 2: 3
+> -	Ch. 5: 1
+>	- 2
+> - Ch. 6: 5
+> - Ch. 8: 5 (optional)
+>	- 6
+> - Baby names
+>	- 2
+>	- 3
 >	- 4
 >	- 5
-> - Ch. 3: 1
->	- 2
-> - Ch. 4 : 5
->	- 6
+>	- 8
+>	- 9
 
-## Wordplay exercises
 
 ## Paper Discussion
-- Caitlyn
+
 
 ## Principles for this week
 
-> - Iteration
-> - Strings
-> - Lists
+> - Importing
+> - Opening files
 
+## Team problem
 
-## Baby names
+Day 2 challenges - #7
 
+## Homework
 
+> - A few (hard) problems

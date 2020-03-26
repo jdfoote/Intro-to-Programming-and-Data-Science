@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="$revealjs-url$/css/reveal.css"/>
+
+$if(highlightjs)$
+<link rel="stylesheet"
+      href="$highlightjs$/$if(highlightjs-theme)$$highlightjs-theme$$else$default$endif$.css"
+      $if(html5)$$else$type="text/css" $endif$/>
+<script src="$highlightjs$/highlight.js"></script>
+$endif$
+
+$if(highlighting-css)$
+<style type="text/css">
+$highlighting-css$
+</style>
+$endif$
+
+$if(theme)$
+<link rel="stylesheet" href="$revealjs-url$/css/theme/$theme$.css" id="theme">
+$endif$
+
+$if(theme-dark)$
+<style type="text/css">
+.reveal section img {
+  background: rgba(255, 255, 255, 0.85);
+}
+</style>
+$endif$
+
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+$if(center)$
+
+$else$
+     .reveal .title {
+        margin-top: 125px;
+        margin-bottom: 50px;
+     }
+$endif$
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+$if(plugin-menu)$
+$if(plugin-chalkboard)$
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+$endif$
+$endif$
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+$if(css)$
+$for(css)$
+    <link rel="stylesheet" href="$css$"/>
+$endfor$
+$endif$
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+$for(header-includes)$
+    $header-includes$
+$endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+  <div class="reveal">
+    <div class="slides">
+
+
+
+<!--
+$if(title)$
+<section>
+    <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <h1 class="subtitle">$subtitle$</h1>
+$endif$
+$for(author)$
+    <h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+    <h3 class="date">$date$</h3>
+$endif$
+</section>
+$endif$
+$if(toc)$
+<section id="$idprefix$TOC">
+$toc$
+</section>
+$endif$
+-->
+
+$body$
+    </div>
+  </div>
+
+  <script src="$revealjs-url$/lib/js/head.min.js"></script>
+  <script src="$revealjs-url$/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+$if(controls)$
+        // Display controls in the bottom right corner
+        controls: $controls$,
+$endif$
+$if(progress)$
+        // Display a presentation progress bar
+        progress: $progress$,
+$endif$
+$if(slideNumber)$
+        // Display the page number of the current slide
+        slideNumber: $slideNumber$,
+$endif$
+$if(history)$
+        // Push each slide change to the browser history
+        history: $history$,
+$endif$
+$if(keyboard)$
+        // Enable keyboard shortcuts for navigation
+        keyboard: $keyboard$,
+$endif$
+$if(overview)$
+        // Enable the slide overview mode
+        overview: $overview$,
+$endif$
+$if(center)$
+        // Vertical centering of slides
+        center: $center$,
+$endif$
+$if(touch)$
+        // Enables touch navigation on devices with touch input
+        touch: $touch$,
+$endif$
+$if(loop)$
+        // Loop the presentation
+        loop: $loop$,
+$endif$
+$if(rtl)$
+        // Change the presentation direction to be RTL
+        rtl: $rtl$,
+$endif$
+$if(fragments)$
+        // Turns fragments on and off globally
+        fragments: $fragments$,
+$endif$
+$if(embedded)$
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: $embedded$,
+$endif$
+$if(help)$
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: $help$,
+$endif$
+$if(autoSlide)$
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: $autoSlide$,
+$endif$
+$if(autoSlideStoppable)$
+        // Stop auto-sliding after user input
+        autoSlideStoppable: $autoSlideStoppable$,
+$endif$
+$if(mouseWheel)$
+        // Enable slide navigation via mouse wheel
+        mouseWheel: $mouseWheel$,
+$endif$
+$if(hideAddressBar)$
+        // Hides the address bar on mobile devices
+        hideAddressBar: $hideAddressBar$,
+$endif$
+$if(previewLinks)$
+        // Opens links in an iframe preview overlay
+        previewLinks: $previewLinks$,
+$endif$
+$if(transition)$
+        // Transition style
+        transition: '$transition$', // none/fade/slide/convex/concave/zoom
+$endif$
+$if(transitionSpeed)$
+        // Transition speed
+        transitionSpeed: '$transitionSpeed$', // default/fast/slow
+$endif$
+$if(backgroundTransition)$
+        // Transition style for full page slide backgrounds
+        backgroundTransition: '$backgroundTransition$', // none/fade/slide/convex/concave/zoom
+$endif$
+$if(viewDistance)$
+        // Number of slides away from the current that are visible
+        viewDistance: $viewDistance$,
+$endif$
+$if(parallaxBackgroundImage)$
+        // Parallax background image
+        parallaxBackgroundImage: '$parallaxBackgroundImage$', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+$endif$
+$if(parallaxBackgroundSize)$
+        // Parallax background size
+        parallaxBackgroundSize: '$parallaxBackgroundSize$', // CSS syntax, e.g. "2100px 900px"
+$endif$
+$if(parallaxBackgroundHorizontal)$
+        // Amount to move parallax background (horizontal and vertical) on slide change
+        // Number, e.g. 100
+        parallaxBackgroundHorizontal: '$parallaxBackgroundHorizontal$',
+$endif$
+$if(parallaxBackgroundVertical)$
+        parallaxBackgroundVertical: '$parallaxBackgroundVertical$',
+$endif$
+$if(width)$
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: $width$,
+$endif$
+$if(height)$
+        height: $height$,
+$endif$
+$if(margin)$
+        // Factor of the display size that should remain empty around the content
+        margin: $margin$,
+$endif$
+$if(minScale)$
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: $minScale$,
+$endif$
+$if(maxScale)$
+        maxScale: $maxScale$,
+$endif$
+
+$if(plugin-menu)$
+        menu: {
+$if(menu-side)$
+          side: $menu-side$,
+$endif$   
+$if(menu-numbers)$
+          numbers: $menu-numbers$,
+$endif$    
+$if(menu-titleSelector)$
+          titleSelector: $menu-titleSelector$,
+$endif$    
+$if(menu-hideMissingTitles)$
+          hideMissingTitles: $menu-hideMissingTitles$,
+$endif$    
+$if(menu-markers)$
+          markers: $menu-markers$,
+$endif$    
+$if(menu-openButton)$
+          openButton: $menu-openButton$,
+$endif$    
+$if(menu-openSlideNumber)$
+          openSlideNumber: $menu-openSlideNumber$,
+$endif$    
+$if(menu-keyboard)$
+          keyboard: $menu-keyboard$,
+$endif$ 
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+$endif$
+
+$if(plugin-chalkboard)$
+
+        chalkboard: {
+$if(chalkboard-src)$
+          src: $chalkboard-src$,
+$endif$
+$if(chalkboard-readOnly)$
+          readOnly: $chalkboard-readOnly$,
+$endif$
+$if(chalkboard-toggleNotesButton)$
+          toggleNotesButton: $chalkboard-toggleNotesButton$,
+$endif$
+$if(chalkboard-toggleChalkboardButton)$
+          toggleChalkboardButton: $chalkboard-toggleChalkboardButton$,
+$endif$
+$if(chalkboard-transition)$
+          transition: $chalkboard-transition$,
+$endif$
+$if(chalkboard-theme)$
+          theme: $chalkboard-theme$,
+$endif$
+$if(chalkboard-color)$
+          color: $chalkboard-color$,
+$endif$
+$if(chalkboard-background)$
+          background: $chalkboard-background$,
+$endif$
+$if(chalkboard-pen)$
+          pen: $chalkboard-pen$,
+$endif$
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+$endif$
+
+        // Optional reveal.js plugins
+        dependencies: [
+$if(plugin-notes)$
+          { src: '$revealjs-url$/plugin/notes/notes.js', async: true },
+$endif$
+$if(plugin-search)$
+          { src: '$revealjs-url$/plugin/search/search.js', async: true },
+$endif$
+$if(plugin-zoom)$
+          { src: '$revealjs-url$/plugin/zoom-js/zoom.js', async: true },
+$endif$
+$if(plugin-chalkboard)$
+          { src: '$revealjs-url$/plugin/chalkboard/chalkboard.js', async: true },
+$endif$
+$if(plugin-menu)$
+          { src: '$revealjs-url$/plugin/menu/menu.js', async: true },
+$endif$
+        ]
+      });
+    </script>
+$if(mathjax-url)$
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "$mathjax-url$";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+$endif$
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+$for(include-after)$
+$include-after$
+$endfor$
+
+  </body>
+</html>

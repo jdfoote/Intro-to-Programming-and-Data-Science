@@ -3,17 +3,19 @@ import re
 from auth import *
 
 url = 'https://wiki.communitydata.science/api.php'
-replacement_prefix = 'Intro to Programming and Data Science (Spring 2020)'
-to_replace='Community Data Science Course (Spring 2019)'
+old_course_prefix = 'Intro to Programming and Data Science (Spring 2020)'
+new_course_prefix = 'Intro to Programming and Data Science (Summer 2020)'
 CSRF_TOKEN = None
 S = requests.Session()
 
-def get_pages(query = to_replace):
+def get_pages(query = old_course_prefix):
     params = {'action':'query',
     'format':'json',
     'prop':'revisions',
     'list':'search',
-    'srsearch': query}
+    'srsearch': query,
+    'srlimit': 500
+    }
     r = S.get(url=url, params = params)
     pages = r.json()['query']['search']
     result = {}
@@ -40,10 +42,10 @@ def get_content(pageids):
 
 
 def replace_content(content,
-        to_replace = to_replace,
-        replace_with = replacement_prefix):
-    pattern = re.escape(to_replace)
-    return re.sub(pattern, replace_with, content)
+        old_prefix = old_course_prefix,
+        new_prefix = new_course_prefix):
+    pattern = re.escape(old_prefix)
+    return re.sub(pattern, new_prefix, content)
 
 
 def make_page(title, content):
@@ -99,6 +101,7 @@ def login():
 
 
 pages = get_pages()
+print(len(pages))
 
 ids = pages.keys()
 

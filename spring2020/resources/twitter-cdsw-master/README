@@ -1,0 +1,22 @@
+To use these example scripts, you will need authentication details
+from Twitter.
+
+1. 
+
+First, go create and retrieve authenication information Twitter.
+Details on how to create this are all on this page:
+
+https://wiki.communitydata.science/Twitter_authentication_setup
+
+2.
+
+Edit the file twitter_authentication.py in this directory to record
+this information. There are four pieces of information you need and
+you will replace every "CHANGE ME" with the value that Twitter has
+given you:
+
+    CONSUMER_KEY = 'CHANGE_ME'
+    CONSUMER_SECRET = 'CHANGE_ME'
+    ACCESS_TOKEN = 'CHANGE_ME'
+    ACCESS_TOKEN_SECRET = 'CHANGE_ME'
+

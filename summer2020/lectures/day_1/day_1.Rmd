@@ -1,0 +1,173 @@
+---
+pagetitle: Intro
+template: "./resources/template.html"
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+<style type="text/css">
+
+/* Changes to RevealJS default formatting.
+
+I prefer this style but you can change these to your preferences */
+
+/* This bit lets you do columns */
+.container{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+}
+
+.reveal section img{
+border: none;
+background: none;
+box-shadow: none;
+}
+
+.highlight {
+color: LightCoral;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+text-transform: none;
+}
+
+.reveal h1 {
+margin-top:200px;
+}
+
+div.footnote {
+font-size: 40%;
+text-align: right;
+}
+
+.bg-image{
+width: 180px;
+}
+
+.reveal .slides section .fragment.fade-in-then-out,
+.reveal .slides section .fragment.current-visible {
+  opacity: 0;
+  visibility: hidden; }
+  .reveal .slides section .fragment.fade-in-then-out.current-fragment,
+  .reveal .slides section .fragment.current-visible.current-fragment {
+    opacity: 1;
+    visibility: inherit; }
+
+.reveal .slides section .fragment.fade-in-then-semi-out {
+  opacity: 0;
+  visibility: hidden; }
+  .reveal .slides section .fragment.fade-in-then-semi-out.visible {
+    opacity: 0.5;
+    visibility: inherit; }
+  .reveal .slides section .fragment.fade-in-then-semi-out.current-fragment {
+    opacity: 1;
+visibility: inherit; }
+</style>
+
+# Welcome!
+
+## Introductions
+
+## About Me
+
+<img class = 'fragment' src = './images/the_fam.jpg' style="width: 80%;"/>
+
+## Dad Joke
+
+- Why did the nearsighted man fall in the well?
+
+> - He couldn't see that well!
+
+# The Class
+
+## Goals
+
+> - Learn basic programming
+> - Be able to collect and visualize data from the web
+> - Present computational research
+> - Read and evaluate computational social science research
+
+## Programming provides exciting opportunities for social scientists
+
+> - Digital data is exploding and programming is required to do research at scale
+> - Algorithms mediate more and more interactions and understanding programming can help us to analyze them
+> - Computational methods let us do new things
+>	- NLP
+>	- Simulation
+>	- Large-scale experiments
+
+
+## About the class
+
+> - It's going to be intense! :)
+> - But we can do it!
+> - 10 AM - Recorded lecture
+> - 11 AM - Co-working / office hours
+> - OH by appointment
+
+## Day-to-day
+
+> - Coding Challenges
+> - Readings
+
+## Final Project
+
+> - I'm compiling some example projects
+> - Whatever is most valuable for you
+>	- Jupyter notebook
+>	- Methods + result section of paper
+>	- Replication
+
+## Project Milestones
+
+> - Final project
+>	- Really quickly identify a dataset and general plan
+>	- Project planning doc
+>	- Project presentation + report
+
+# Resources
+
+## Wiki
+
+> - Schedule
+> - Links to readings
+
+## Brightspace
+
+> - Readings
+> - Discussion board
+>	- Upload a video
+>	- Discussion
+> - Example Projects
+
+## Piazza
+
+> - Post questions and help each other
+> - Daily random assignments as "answerer"
+>	- Starting with tomorrow's HW
+
+## Anaconda / Jupyter Intro

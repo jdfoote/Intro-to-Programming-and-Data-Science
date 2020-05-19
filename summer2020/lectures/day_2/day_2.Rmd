@@ -1,0 +1,193 @@
+---
+pagetitle: Computational Thinking
+template: "../resources/template.html"
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+library(reticulate)
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+<style type="text/css">
+
+/* Changes to RevealJS default formatting.
+
+I prefer this style but you can change these to your preferences */
+
+/* This bit lets you do columns */
+.container{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+}
+
+.reveal section img{
+border: none;
+background: none;
+box-shadow: none;
+}
+
+.highlight {
+color: LightCoral;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+text-transform: none;
+}
+
+.reveal h1 {
+margin-top:200px;
+}
+
+div.footnote {
+font-size: 40%;
+text-align: right;
+}
+
+.bg-image{
+width: 180px;
+}
+
+.reveal .slides section .fragment.fade-in-then-out,
+.reveal .slides section .fragment.current-visible {
+  opacity: 0;
+  visibility: hidden; }
+  .reveal .slides section .fragment.fade-in-then-out.current-fragment,
+  .reveal .slides section .fragment.current-visible.current-fragment {
+    opacity: 1;
+    visibility: inherit; }
+
+.reveal .slides section .fragment.fade-in-then-semi-out {
+  opacity: 0;
+  visibility: hidden; }
+  .reveal .slides section .fragment.fade-in-then-semi-out.visible {
+    opacity: 0.5;
+    visibility: inherit; }
+  .reveal .slides section .fragment.fade-in-then-semi-out.current-fragment {
+    opacity: 1;
+visibility: inherit; }
+</style>
+
+# Day 2
+
+## Dad Joke
+
+> - Where do you take someone who has been injured in a hide-and-seek accident?
+> - To the I.C.U.
+
+## Housekeeping
+
+> - Solutions for Day 2 aren't due until morning of Day 3 (i.e., tomorrow)
+
+# Programming Principles
+
+## Introduction
+
+> - Python holds things in RAM, and writes to secondary memory / disk
+> - Running Python
+>	- Terminal
+>	  - Interactive
+>	- Command line
+>	- Jupyter
+> - Python is interpreted, not compiled
+
+## Debugging
+
+> - Common bugs
+>	- Syntax
+>	- Intermediate objects
+>	- Complexity
+> - Strategies
+>	- Read through the code
+>	- Make things visible
+>	- Simplify
+
+## Variables
+
+> - Name that stores data
+> - Has different types, e.g.:
+>	- Strings
+>	- Integers
+>	- Floats
+>	- Lists
+>	- Dictionaries
+> - Can't start with a number
+> - Usually written_like_this
+> - If it's not saved to a variable (or to disk), it's gone!
+
+## Conditionals
+
+> - Control flow
+>	- Run different parts of the code depending on the "state"
+> - Conditionals depend on booleans
+>	- Expressions that evaluate to `True` or `False`
+>	- `<`, `>`, `>=`, `<=`, `==`, `!=`, `in`, or `not in`
+>	- They are evaluated in order and can "short circuit"
+
+## Example of a conditional
+
+```{python, echo=TRUE}
+#x = input("How many hours have you been working on this homework?")
+x = 6
+if x > 5 or xy == 45:
+  print("That's too long!")
+
+```
+
+## Functions
+
+> - Pieces of code that you want to reuse
+>	- Often take in "arguments"
+>	- They do something with the arguments, and often "return" something
+
+## Types of functions
+
+> - Built in functions
+>	- print()
+>	- type()
+> - Modules / libraries
+>	- import random
+>	- random.randint(1,5)
+
+
+## Example function
+
+```{python, echo=TRUE}
+
+def exclaim(s):
+  # Changes a normal string into an exclamation!
+  s = s.upper()
+  return s + '!!'
+  
+exclaim("Hello, everyone")
+
+```
+
+
+# HW Review
+
+## Day 1
+
+> - How did it go?
+> - What do you still have questions about?

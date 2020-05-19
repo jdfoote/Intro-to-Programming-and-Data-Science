@@ -6,12 +6,11 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
-    reveal_plugins: ["notes"]
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = './')
 source("resources/preamble.R")
 
@@ -90,41 +89,20 @@ visibility: inherit; }
 
 </style>
 
-## Weekly Dad Joke
+# Day 3!
 
-Why did the nearsighted man fall in the well?
+## Dad Joke
 
+- What did the French man say when he went down the slide?
+
+> - Yeeesss!
 
 ## Questions from homework
-> - Try/except
-> - Indenting
-> - Conditionals / Control Flow
-> - Functions
 
-## Environment
 
-## Solution sharing
-> -	Ch. 1: 1 + 6
-> - Ch. 2: 3
->	- 4
->	- 5
-> - Ch. 3: 1
->	- 2
-> - Ch. 4 : 5
->	- 6
+## Programming Concepts
+
+> - Open the ipynb file on the wiki
 
 ## Wordplay exercises
-
-## Paper Discussion
-- Caitlyn
-
-## Principles for this week
-
-> - Iteration
-> - Strings
-> - Lists
-
-
-## Baby names
-
 

@@ -1082,69 +1082,6 @@ visibility: hidden; }
 </style>
 
 
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {  }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
 
 <style type="text/css">
 @font-face {
@@ -1911,124 +1848,33 @@ visibility: inherit; }
 <ul>
 <li class="fragment">Yeeesss!</li>
 </ul>
+</section><section id="housekeeping" class="slide level2">
+<h2>Housekeeping</h2>
+<ul>
+<li class="fragment">DataCamp</li>
+</ul>
 </section><section id="questions-from-homework" class="slide level2">
 <h2>Questions from homework</h2>
-</section></section>
-<section><section id="programming-concepts" class="title-slide slide level1"><h1>Programming Concepts</h1></section><section id="iteration" class="slide level2">
-<h2>Iteration</h2>
 <ul>
-<li class="fragment">Basic idea is to run code in a loop</li>
-</ul>
-</section><section id="iterate-through-a-list" class="slide level2">
-<h2>Iterate through a list</h2>
+<li class="fragment">Zero indexing</li>
+<li class="fragment">Restarting Jupyter</li>
+<li class="fragment">Comments in code</li>
+<li class="fragment">Formatting in Piazza
 <ul>
-<li>Loop through a list, and apply code to each item in the list</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">l <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">10</span>,<span class="dv">56</span>]</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="cf">for</span> item <span class="kw">in</span> l:</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="bu">print</span>(item <span class="op">+</span> <span class="dv">20</span>)</a></code></pre></div>
-<pre><code>## 21
-## 22
-## 30
-## 76</code></pre>
-</section><section id="while-loop" class="slide level2">
-<h2>While loop</h2>
-<ul>
-<li class="fragment">Keep going until a condition is met</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1">x <span class="op">=</span> <span class="dv">1</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="cf">while</span> x <span class="op">&lt;</span> <span class="dv">10</span>:</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">  <span class="bu">print</span>(x)</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  x <span class="op">=</span> x <span class="op">+</span> <span class="dv">1</span></a></code></pre></div>
-<pre><code>## 1
-## 2
-## 3
-## 4
-## 5
-## 6
-## 7
-## 8
-## 9</code></pre>
-</section><section id="breaking-out-of-loops" class="slide level2">
-<h2>Breaking out of loops</h2>
-<ul>
-<li class="fragment">List loops terminate when the list is exhausted</li>
-<li class="fragment">Sometimes, it makes sense to break out of the loop in other ways
-<ul>
-<li class="fragment"><code>continue</code> jumps to the next item in the loop without finishing the rest of the body of code</li>
-<li class="fragment"><code>break</code> breaks the loop</li>
+<li class="fragment">Note for solutions, question for questions</li>
+<li class="fragment">Begin with SOLUTION</li>
+<li class="fragment">Include question text</li>
+<li class="fragment">Add a verbal explanation and/or code comments</li>
+<li class="fragment">Formatting code</li>
 </ul></li>
+<li class="fragment">Metadiscussion: Could our approach be improved?</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">100</span>):</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">  <span class="cf">if</span> x <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3">    <span class="cf">continue</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4">  <span class="bu">print</span>(x)</a>
-<a class="sourceLine" id="cb5-5" data-line-number="5">  <span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">7</span>:</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">    <span class="cf">break</span></a></code></pre></div>
-<pre><code>## 1
-## 3
-## 5
-## 7
-## 9</code></pre>
-</section><section id="really-important-pattern-in-loops" class="slide level2">
-<h2>Really important pattern in loops</h2>
+</section><section id="other-questions" class="slide level2">
+<h2>Other questions?</h2>
+</section><section id="programming-concepts" class="slide level2">
+<h2>Programming Concepts</h2>
 <ul>
-<li class="fragment">Create an object to store some kind of result</li>
-<li class="fragment">Every time you go through the loop, update that object</li>
-</ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="im">import</span> random</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2">max_num <span class="op">=</span> <span class="va">None</span></a>
-<a class="sourceLine" id="cb7-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>):</a>
-<a class="sourceLine" id="cb7-5" data-line-number="5">  curr_num <span class="op">=</span> random.randint(<span class="dv">1</span>,<span class="dv">100</span>)</a>
-<a class="sourceLine" id="cb7-6" data-line-number="6">  <span class="cf">if</span> max_num <span class="op">==</span> <span class="va">None</span> <span class="kw">or</span> curr_num <span class="op">&gt;</span> max_num:</a>
-<a class="sourceLine" id="cb7-7" data-line-number="7">    max_num <span class="op">==</span> curr_num</a></code></pre></div>
-<pre><code>## False
-## False
-## False
-## False
-## False
-## False
-## False
-## False
-## False
-## False</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="bu">print</span>(max_num)</a></code></pre></div>
-<pre><code>## None</code></pre>
-</section><section id="strings" class="slide level2">
-<h2>Strings</h2>
-<ul>
-<li class="fragment">Strings are sequences of characters</li>
-<li class="fragment">Brackets index them (e.g., ‘test’[1] will output ‘e’)</li>
-<li class="fragment">There are a few ways to transform strings
-<ul>
-<li class="fragment">‘hi’ + ‘there’</li>
-</ul></li>
-<li class="fragment">‘hi’.upper()</li>
-<li class="fragment">‘HI’.lower()</li>
-</ul>
-</section><section id="info-about-strings" class="slide level2">
-<h2>Info about strings</h2>
-<ul>
-<li class="fragment">len(s)</li>
-<li class="fragment">s.find(‘t’)</li>
-<li class="fragment">s.startswith(‘test’)</li>
-<li class="fragment">s.endswith(‘test’)</li>
-</ul>
-</section><section id="formatting-strings" class="slide level2">
-<h2>Formatting strings</h2>
-<ul>
-<li class="fragment">A few ways. My preferred (which is different from the book):</li>
-</ul>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb11-2" data-line-number="2">name <span class="op">=</span> <span class="st">'Jeremy'</span></a>
-<a class="sourceLine" id="cb11-3" data-line-number="3">age <span class="op">=</span> <span class="dv">38</span></a>
-<a class="sourceLine" id="cb11-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb11-5" data-line-number="5"><span class="bu">print</span>(<span class="ss">f'My name is </span><span class="sc">{</span>name<span class="sc">}</span><span class="ss"> and I am </span><span class="sc">{</span>age<span class="sc">}</span><span class="ss"> years old'</span>)</a></code></pre></div>
-<pre><code>## My name is Jeremy and I am 38 years old</code></pre>
-<ul>
-<li class="fragment">Lists</li>
+<li class="fragment">Open the ipynb file on the wiki</li>
 </ul>
 </section><section id="wordplay-exercises" class="slide level2">
 <h2>Wordplay exercises</h2>

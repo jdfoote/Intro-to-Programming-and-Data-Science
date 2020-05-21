@@ -1,13 +1,12 @@
 ---
 title: COM 674
-template: "../resources/template.html"
+template: "./resources/template.html"
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
-    reveal_plugins: ["notes"]
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
@@ -98,71 +97,13 @@ Brochure
 
 ## Housekeeping
 
-> - Project proposal feedback session?
-
-## Course feedback
-
-> - Sharing/comparing code
->	- Solutions?
->	- Feedback
->	- Screencast?
-> - Synchronous exercises in class
-> - More lecture
-
-## Solution sharing
-
-Chapter 7: 1,2,3
-
-Baby names: 1, 2, 3
-
-## Paper discussion
-
-Margolin, D. B., Hannak, A., & Weber, I. (2018). Political Fact-Checking on Twitter: When Do Corrections Have an Effect? Political Communication, 35(2), 196–219.
-
-> - Lots of evidence that people don't act like "intuitive scientists"
->	- Misinformation doesn't change opinions
->	- Rumors propagation happens even in the face of corrections
-> - Key question of their study:
->	- What are the social conditions that encourage retraction/opinion change?
-
-## Hypotheses
-
-> - H1: People are more likely to accept corrections from friends
-> - H2: People are more likely to accept corrections from those embedded in same group (larger shared audience)
-> - RQ: How do audience sizes affect likelihood to accept corrections?
-
-## Paper discussion
-
-> - Method
->	- Twitter "garden hose" to identify tweets where:
->	  - "Snopee" shares misinformation
->	  - "Snoper" shares link to correction
->	  - "Snopee" responds
->	- Coded the content of the correction and response
->	- Regression to predict when a correction was accepted
-> - H1 was accepted; no strong effect for others.
-
-## Questions
-
-> - What were some strengths of the research design? Weaknesses?
-> - What is the next study you would design to complement this study?
-> - How much do you think the context influenced the results?
-
-## Project proposal feedback session?
-
-
-
+> - Project idea peer feedback?
 
 ## Principles for this week
 
-> - Jupyter Notebooks
 > - Dictionaries
 > - Tuples
 
-## Team problem
-
-Day 2 challenges - #7
-
 ## Homework
 
-> - Jupyter notebook + problems from book
+> - Baby names project

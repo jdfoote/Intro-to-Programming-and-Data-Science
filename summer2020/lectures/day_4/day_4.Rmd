@@ -1,13 +1,12 @@
 ---
 title: COM 674
-template: "../resources/template.html"
+template: "./resources/template.html"
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
-    reveal_plugins: ["notes"]
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
@@ -90,6 +89,8 @@ visibility: inherit; }
 
 </style>
 
+# Day 4: Files
+
 ## Weekly Dad Joke
 
 - My girlfriend left me because I'm insecure...
@@ -97,40 +98,22 @@ visibility: inherit; }
 > - Nevermind, she's back. She just went to the bathroom.
 
 ## Housekeeping
-> - Feedback is on Brightspace
-> - Self assessment reflections
-> - Food?
-> - Study/HW groups
+
+> - I will give feedback today
+> - Grades!!!
+>	- Two self-assessments
+>	- Mostly based on the final project
 
 ## Questions from homework
 
-
-## Solution sharing
-> -	Ch. 5: 1
->	- 2
-> - Ch. 6: 5
-> - Ch. 8: 5 (optional)
->	- 6
-> - Baby names
->	- 2
->	- 3
->	- 4
->	- 5
->	- 8
->	- 9
-
-
-## Paper Discussion
-
+> - `=` vs. `==`
+> - `except`
+> - for vs. while
+> - alias
 
 ## Principles for this week
 
-> - Importing
-> - Opening files
-
-## Team problem
-
-Day 2 challenges - #7
+> - Opening, reading, and writing to files
 
 ## Homework
 

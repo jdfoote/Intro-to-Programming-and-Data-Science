@@ -1,0 +1,70 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Weekly Dad Joke
+
+
+Within minutes, the detective knew exactly what the murder weapon was.
+
+<span class='fragment'>
+It was a brief case.
+</span>
+
+## Housekeeping
+
+> - Self-assessment reflection
+> - Project Planning Document due next week
+> - Snack timing?
+
+
+## Solution sharing
+
+> - Sharing question and approaches
+> - Where did folks run into problems?
+
+> - Questions from DataCamp
+
+
+## Paper discussion (Leah)
+
+Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28. 
+
+## Break
+
+
+## Scraping Data
+
+> - Three main ways of getting web data:
+>	- Downloading
+>	- APIs
+>	- Scraping
+
+## API Notebook
+
+
+## Twitter Notebook
+
+## Homework
+
+> - Finish Twitter Notebook
+> - Project Planning Document due next week

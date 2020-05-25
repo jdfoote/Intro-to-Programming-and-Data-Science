@@ -1,0 +1,55 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+# Day 3!
+
+## Dad Joke
+
+- What did the French man say when he went down the slide?
+
+> - Yeeesss!
+
+## Housekeeping
+
+> - DataCamp
+
+## Questions from homework
+
+> - Zero indexing
+> - Restarting Jupyter
+> - Comments in code
+> - Formatting in Piazza
+>	- Note for solutions, question for questions
+>	- Begin with SOLUTION
+>	- Include question text
+>	- Add a verbal explanation and/or code comments
+>	- Formatting code
+> - Metadiscussion: Could our approach be improved?
+
+## Other questions?
+
+## Programming Concepts
+
+> - Open the ipynb file on the wiki
+
+## Wordplay exercises
+

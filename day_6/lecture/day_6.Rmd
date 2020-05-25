@@ -1,0 +1,59 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Weekly Dad Joke
+
+I accidentally swallowed a bunch of scrabble tiles.
+
+
+My next trip to the bathroom could spell disaster.
+
+## Housekeeping
+
+
+## Solution sharing
+
+Jupyter notebook exercise
+
+Chapter 9: 2, 3
+
+Chapter 10: 1, 2
+
+## Paper discussion (Courteney)
+
+Benefield, G. A., Shen, C., & Leavitt, A. (2016). Virtual Team Networks: How Group Social Capital Affects Team Success in a Massively Multiplayer Online Game. Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work & Social Computing, 679–690. 
+
+
+## Principles for this week
+
+> - pandas
+> - dataframes
+> - Visualization
+
+## Team problem
+
+Day 2 challenges - #7
+
+## Homework
+
+> - Jupyter notebook 
+> - Start "Intermediate Python"

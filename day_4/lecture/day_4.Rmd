@@ -1,0 +1,52 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+# Day 4: Files
+
+## Weekly Dad Joke
+
+- My girlfriend left me because I'm insecure...
+
+> - Nevermind, she's back. She just went to the bathroom.
+
+## Housekeeping
+
+> - I will give feedback today
+> - Grades!!!
+>	- Two self-assessments
+>	- Mostly based on the final project
+
+## Questions from homework
+
+> - `=` vs. `==`
+> - `except`
+> - for vs. while
+> - alias
+
+## Principles for this week
+
+> - Opening, reading, and writing to files
+
+## Homework
+
+> - A few (hard) problems

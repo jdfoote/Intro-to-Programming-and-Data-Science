@@ -1,0 +1,67 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Weekly Dad Joke
+
+A thief stole my anti-depressant medication:
+
+<span class='fragment'>
+I hope he's happy!
+</span>
+
+
+## Housekeeping
+
+> - Opening Jupyter notebooks from GitHub
+> - Readings are on Brightspace
+
+## Solution sharing
+
+Jupyter notebook exercises
+
+> - Average comment length by subreddit
+> - Comment count and average score
+> - Comments per month
+> - Line for each day of the week
+
+## Other questions
+
+Questions from DataCamp?
+
+> - Pandas, seaborn, and matplotlib
+
+## Paper discussion (Hanna)
+
+Lazer and Radford (2017). Data ex Machina: Introduction to Big Data.
+
+## Principles for this week
+
+> - Data exploration
+> - Data cleaning
+
+
+## Homework
+
+> - Second self-assessment due next week
+> - Finish "Intermediate Python"
+> - Finish your visualization / report

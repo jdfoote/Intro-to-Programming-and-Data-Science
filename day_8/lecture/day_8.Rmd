@@ -12,7 +12,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
@@ -32,24 +31,7 @@ It was a brief case.
 
 ## Housekeeping
 
-> - Self-assessment reflection
-> - Project Planning Document due next week
-> - Snack timing?
-
-
-## Solution sharing
-
-> - Sharing question and approaches
-> - Where did folks run into problems?
-
-> - Questions from DataCamp
-
-
-## Paper discussion (Leah)
-
-Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28. 
-
-## Break
+> - Self-assessment reflection and planning document
 
 
 ## Scraping Data

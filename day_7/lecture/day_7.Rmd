@@ -12,7 +12,6 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
@@ -21,7 +20,7 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-## Weekly Dad Joke
+## Dad Joke
 
 A thief stole my anti-depressant medication:
 
@@ -46,4 +45,5 @@ Jupyter notebook exercises
 > - Comment count and average score
 > - Comments per month
 > - Line for each day of the week
+
 

@@ -1,5 +1,5 @@
 ---
-pagetitle: COM 674
+pagetitle: Intro to APIs
 output: 
   revealjs::revealjs_presentation:
     theme: white
@@ -20,7 +20,7 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-## Weekly Dad Joke
+## Dad Joke
 
 
 Within minutes, the detective knew exactly what the murder weapon was.
@@ -43,10 +43,11 @@ It was a brief case.
 
 ## API Notebook
 
-
-## Twitter Notebook
-
 ## Homework
 
-> - Finish Twitter Notebook
-> - Project Planning Document due next week
+> - Project Planning Document and self-reflection
+> - Coding assignments due on Monday
+
+## Review
+
+> - Faceting

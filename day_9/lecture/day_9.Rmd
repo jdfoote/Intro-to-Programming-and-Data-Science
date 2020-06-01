@@ -20,35 +20,16 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-## Weekly Dad Joke
+## Dad Joke
 
 My neighbor had the nerve to ring my doorbell at 3 o'clock in the morning.
 
-Luckily I was still up playing the drums.
+<span class='fragment'> Luckily I was still up playing the drums. </span>
 
 ## Housekeeping
 
 > - Self-assessment reflection
->	- Engagement during reading discussion
->	  - Move to start of class?
->	  - Close laptops?
->	  - Do the readings!
->	- Text analysis
->	  - Move earlier? Instead of/before web scraping?
->	  - Form a study group?
-
-
-
-## Housekeeping
-
-> - Project Planning Document due next week
-
-
-## Solution sharing
-
-> - Wikipedia API
-> - Twitter exercises
-
+> - Ping in chat if you want to talk
 
 ## Ethics in online data
 > - Some dangers
@@ -74,12 +55,11 @@ Luckily I was still up playing the drums.
 ## Balance is needed
 
 What are the dangers of too much caution?
-
 > - Emotional contagion as example case
 
 ## Some principles
 
-> - Respect for persons, beneficence, Justice, Respect for Law and Public Interest
+> - Respect for persons, beneficence, justice, respect for law, and public interest
 > - Think through possible harms to participants and the systems
 > - Do work that has benefits
 > - Consult with others
@@ -89,10 +69,6 @@ What are the dangers of too much caution?
 > - Alter quotes/usernames
 > - Share research with participants
 
-
-## Break
-
-
 ## Working with online data
 
 > - Save the raw data
@@ -100,5 +76,11 @@ What are the dangers of too much caution?
 
 ## Limitations of online data
 
+> - Found, not made
+> - Missing (sometimes invisibly)
+> - Can result from changing/hidden processes
 
-## Day 8 challenges + API assignment
+## Day 9 challenge
+
+> - API mini-project
+> - How/where to share?

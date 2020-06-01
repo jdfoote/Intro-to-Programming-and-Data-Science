@@ -1378,6 +1378,41 @@ transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
     <style type="text/css">code{white-space: pre;}</style>
 
+    <style type="text/css">
+
+.container{
+display: flex;
+}
+.col{
+flex: 1;
+}
+.reveal section img{
+border: none;
+background: none;
+box-shadow: none;
+}
+.highlight {
+color: LightCoral;
+}
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+text-transform: none;
+}
+.reveal h1 {
+margin-top:200px;
+}
+div.footnote {
+font-size: 40%;
+text-align: right;
+}
+.bg-image{
+width: 180px;
+}
+</style>
 
 <!-- Printing and PDF exports -->
 <script id="paper-css" type="application/dynamic-css">
@@ -1766,115 +1801,17 @@ document.getElementsByTagName('head')[0].appendChild(style);
   <div class="reveal">
     <div class="slides">
 
-<section>
-    <h1 class="title">COM 674</h1>
-</section>
 
-<section class="slide level2">
-
-<style type="text/css">
-
-/* Changes to RevealJS default formatting.
-
-I prefer this style but you can change these to your preferences */
-
-/* This bit lets you do columns */
-.container{
-  display: flex;
-}
-
-.col{
-  flex: 1;
-}
-
-.reveal section img{
-border: none;
-background: none;
-box-shadow: none;
-}
-
-.highlight {
-color: LightCoral;
-}
-
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-text-transform: none;
-}
-
-.reveal h1 {
-margin-top:200px;
-}
-
-div.footnote {
-font-size: 40%;
-text-align: right;
-}
-
-.bg-image{
-width: 180px;
-}
-
-.reveal .slides section .fragment.fade-in-then-out,
-.reveal .slides section .fragment.current-visible {
-  opacity: 0;
-  visibility: hidden; }
-  .reveal .slides section .fragment.fade-in-then-out.current-fragment,
-  .reveal .slides section .fragment.current-visible.current-fragment {
-    opacity: 1;
-    visibility: inherit; }
-
-.reveal .slides section .fragment.fade-in-then-semi-out {
-  opacity: 0;
-  visibility: hidden; }
-  .reveal .slides section .fragment.fade-in-then-semi-out.visible {
-    opacity: 0.5;
-    visibility: inherit; }
-  .reveal .slides section .fragment.fade-in-then-semi-out.current-fragment {
-    opacity: 1;
-visibility: inherit; }
-
-</style>
-</section>
-<section id="weekly-dad-joke" class="slide level2">
-<h2>Weekly Dad Joke</h2>
+<section id="dad-joke" class="slide level2">
+<h2>Dad Joke</h2>
 <p>My neighbor had the nerve to ring my doorbell at 3 o’clock in the morning.</p>
-<p>Luckily I was still up playing the drums.</p>
+<p><span class="fragment"> Luckily I was still up playing the drums. </span></p>
 </section>
 <section id="housekeeping" class="slide level2">
 <h2>Housekeeping</h2>
 <ul>
-<li class="fragment">Self-assessment reflection
-<ul>
-<li class="fragment">Engagement during reading discussion
-<ul>
-<li class="fragment">Move to start of class?</li>
-<li class="fragment">Close laptops?</li>
-<li class="fragment">Do the readings!</li>
-</ul></li>
-<li class="fragment">Text analysis
-<ul>
-<li class="fragment">Move earlier? Instead of/before web scraping?</li>
-<li class="fragment">Form a study group?</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="housekeeping-1" class="slide level2">
-<h2>Housekeeping</h2>
-<ul>
-<li class="fragment">Project Planning Document due next week</li>
-</ul>
-</section>
-<section id="solution-sharing" class="slide level2">
-<h2>Solution sharing</h2>
-<ul>
-<li class="fragment">Wikipedia API</li>
-<li class="fragment">Twitter exercises</li>
+<li class="fragment">Self-assessment reflection</li>
+<li class="fragment">Ping in chat if you want to talk</li>
 </ul>
 </section>
 <section id="ethics-in-online-data" class="slide level2">
@@ -1918,15 +1855,12 @@ visibility: inherit; }
 </section>
 <section id="balance-is-needed" class="slide level2">
 <h2>Balance is needed</h2>
-<p>What are the dangers of too much caution?</p>
-<ul>
-<li class="fragment">Emotional contagion as example case</li>
-</ul>
+<p>What are the dangers of too much caution? &gt; - Emotional contagion as example case</p>
 </section>
 <section id="some-principles" class="slide level2">
 <h2>Some principles</h2>
 <ul>
-<li class="fragment">Respect for persons, beneficence, Justice, Respect for Law and Public Interest</li>
+<li class="fragment">Respect for persons, beneficence, justice, respect for law, and public interest</li>
 <li class="fragment">Think through possible harms to participants and the systems</li>
 <li class="fragment">Do work that has benefits</li>
 <li class="fragment">Consult with others</li>
@@ -1937,9 +1871,6 @@ visibility: inherit; }
 <li class="fragment">Share research with participants</li>
 </ul>
 </section>
-<section id="break" class="slide level2">
-<h2>Break</h2>
-</section>
 <section id="working-with-online-data" class="slide level2">
 <h2>Working with online data</h2>
 <ul>
@@ -1949,9 +1880,18 @@ visibility: inherit; }
 </section>
 <section id="limitations-of-online-data" class="slide level2">
 <h2>Limitations of online data</h2>
+<ul>
+<li class="fragment">Found, not made</li>
+<li class="fragment">Missing (sometimes invisibly)</li>
+<li class="fragment">Can result from changing/hidden processes</li>
+</ul>
 </section>
-<section id="day-8-challenges-api-assignment" class="slide level2">
-<h2>Day 8 challenges + API assignment</h2>
+<section id="day-9-challenge" class="slide level2">
+<h2>Day 9 challenge</h2>
+<ul>
+<li class="fragment">API mini-project</li>
+<li class="fragment">How/where to share?</li>
+</ul>
 </section>
     </div>
   </div>

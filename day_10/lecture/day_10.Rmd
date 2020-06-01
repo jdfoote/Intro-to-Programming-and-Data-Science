@@ -1,0 +1,55 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+For years, my parents sent me to a child psychologist.
+
+<span class='fragment'> That kid didn't help me at all.</span>
+
+
+## Housekeeping
+
+> - A model for engaging with readings
+>	- A continued, asynchronous conversation
+> - Example projects
+
+
+## Computational Text Analysis
+
+> - Overlapping terms: NLP, computational linguistics
+> - A really big area with lots of applications across a lot of fields
+>	- Machine translation
+>	- Linguistics
+>	- Communication
+> - In other words, one day is not long enough to give any sort of competency.
+
+## Common uses of text analysis in Communication and adjacent disciplines
+
+> - LIWC
+> - Sentiment analysis
+> - Classification
+> - Topic modeling
+
+## HW review
+
+> - Encoding / Decoding

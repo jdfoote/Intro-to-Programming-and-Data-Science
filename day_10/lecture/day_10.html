@@ -1378,6 +1378,41 @@ transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
     <style type="text/css">code{white-space: pre;}</style>
 
+    <style type="text/css">
+
+.container{
+display: flex;
+}
+.col{
+flex: 1;
+}
+.reveal section img{
+border: none;
+background: none;
+box-shadow: none;
+}
+.highlight {
+color: LightCoral;
+}
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+text-transform: none;
+}
+.reveal h1 {
+margin-top:200px;
+}
+div.footnote {
+font-size: 40%;
+text-align: right;
+}
+.bg-image{
+width: 180px;
+}
+</style>
 
 <!-- Printing and PDF exports -->
 <script id="paper-css" type="application/dynamic-css">
@@ -1766,177 +1801,48 @@ document.getElementsByTagName('head')[0].appendChild(style);
   <div class="reveal">
     <div class="slides">
 
-<section>
-    <h1 class="title">COM 674</h1>
-</section>
 
-<section class="slide level2">
-
-<style type="text/css">
-
-/* Changes to RevealJS default formatting.
-
-I prefer this style but you can change these to your preferences */
-
-/* This bit lets you do columns */
-.container{
-  display: flex;
-}
-
-.col{
-  flex: 1;
-}
-
-.reveal section img{
-border: none;
-background: none;
-box-shadow: none;
-}
-
-.highlight {
-color: LightCoral;
-}
-
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-text-transform: none;
-}
-
-.reveal h1 {
-margin-top:200px;
-}
-
-div.footnote {
-font-size: 40%;
-text-align: right;
-}
-
-.bg-image{
-width: 180px;
-}
-
-.reveal .slides section .fragment.fade-in-then-out,
-.reveal .slides section .fragment.current-visible {
-  opacity: 0;
-  visibility: hidden; }
-  .reveal .slides section .fragment.fade-in-then-out.current-fragment,
-  .reveal .slides section .fragment.current-visible.current-fragment {
-    opacity: 1;
-    visibility: inherit; }
-
-.reveal .slides section .fragment.fade-in-then-semi-out {
-  opacity: 0;
-  visibility: hidden; }
-  .reveal .slides section .fragment.fade-in-then-semi-out.visible {
-    opacity: 0.5;
-    visibility: inherit; }
-  .reveal .slides section .fragment.fade-in-then-semi-out.current-fragment {
-    opacity: 1;
-visibility: inherit; }
-
-</style>
-</section>
 <section id="dad-joke" class="slide level2">
 <h2>Dad Joke</h2>
-<p>Interviewer: “Where do you see yourself in 5 years?”</p>
-<p>Me: “Listening. I would say listening is my biggest weakness.”</p>
+<p>For years, my parents sent me to a child psychologist.</p>
+<p><span class="fragment"> That kid didn’t help me at all.</span></p>
 </section>
-<section id="online-674" class="slide level2">
-<h2>Online 674</h2>
+<section id="housekeeping" class="slide level2">
+<h2>Housekeeping</h2>
 <ul>
-<li class="fragment">FlipGrid
+<li class="fragment">A model for engaging with readings
 <ul>
-<li class="fragment">Discussion of readings</li>
-<li class="fragment">Programming questions?</li>
+<li class="fragment">A continued, asynchronous conversation</li>
 </ul></li>
-<li class="fragment">Assignments</li>
-<li class="fragment">Lectures and example code</li>
-<li class="fragment">Do what you can, and I’ll do the same</li>
+<li class="fragment">Example projects</li>
 </ul>
 </section>
-<section id="adjustments-to-schedule" class="slide level2">
-<h2>Adjustments to schedule</h2>
+<section id="computational-text-analysis" class="slide level2">
+<h2>Computational Text Analysis</h2>
 <ul>
-<li class="fragment">Text analysis to next week</li>
-<li class="fragment">Screen scraping to the end</li>
-<li class="fragment">This includes readings, so LMK if that messes up your schedule</li>
-<li class="fragment">Planning document feedback by Friday</li>
+<li class="fragment">Overlapping terms: NLP, computational linguistics</li>
+<li class="fragment">A really big area with lots of applications across a lot of fields
+<ul>
+<li class="fragment">Machine translation</li>
+<li class="fragment">Linguistics</li>
+<li class="fragment">Communication</li>
+</ul></li>
+<li class="fragment">In other words, one day is not long enough to give any sort of competency.</li>
 </ul>
 </section>
-<section id="api-assignments" class="slide level2">
-<h2>API assignments</h2>
+<section id="common-uses-of-text-analysis-in-communication-and-adjacent-disciplines" class="slide level2">
+<h2>Common uses of text analysis in Communication and adjacent disciplines</h2>
 <ul>
-<li class="fragment">Goal is to take you through the whole process with a simple question</li>
-<li class="fragment">I will work on some solutions + video</li>
-<li class="fragment">Good approach for bigger API-based projects
-<ul>
-<li class="fragment">3 scripts:
-<ul>
-<li class="fragment">First gets raw data and saves it</li>
-<li class="fragment">Second processes it into a CSV</li>
-<li class="fragment">Third creates measures, plots, etc.</li>
-</ul></li>
-<li class="fragment">Make your process reproducible</li>
-</ul></li>
+<li class="fragment">LIWC</li>
+<li class="fragment">Sentiment analysis</li>
+<li class="fragment">Classification</li>
+<li class="fragment">Topic modeling</li>
 </ul>
 </section>
-<section id="cleaning-data" class="slide level2">
-<h2>Cleaning data</h2>
+<section id="hw-review" class="slide level2">
+<h2>HW review</h2>
 <ul>
-<li class="fragment">Why is data ‘dirty’?
-<ul>
-<li class="fragment">Errors in transcription</li>
-<li class="fragment">Bugs in software that produced it</li>
-<li class="fragment">Missing data (e.g., when a date is unknown it’s recoded as Jan 1)</li>
-<li class="fragment">Can’t be read by software
-<ul>
-<li class="fragment">Wrong date format</li>
-<li class="fragment">Multiple age formats - e.g., ‘4’, ‘4 yo’, ‘4 years’</li>
-</ul></li>
-<li class="fragment">Observations that shouldn’t be in the analysis</li>
-<li class="fragment">Inappropriate for statistical tests
-<ul>
-<li class="fragment">log-transformations</li>
-<li class="fragment">Coding groups (e.g., high-risk and low-risk)</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="operationalization" class="slide level2">
-<h2>Operationalization</h2>
-<ul>
-<li class="fragment">Making a construct measurable
-<ul>
-<li class="fragment">Constructs are not empirical and can’t be tested directly</li>
-<li class="fragment">We must argue that our measures represent or at least are correlated with the concepts we really care about</li>
-<li class="fragment">Hypotheses relate concepts together, e.g., “socially cohesive groups are more willing to contribute to shared goals”</li>
-<li class="fragment">In order to test this, need to argue that you have something that represents social cohesion, and something that represents shared goals.</li>
-</ul></li>
-</ul>
-</section>
-<section id="online-data" class="slide level2">
-<h2>Online data</h2>
-<ul>
-<li class="fragment">Online data is “raw”
-<ul>
-<li class="fragment">This is generally wonderful - we have actual conversations, full text, etc.</li>
-</ul></li>
-<li class="fragment">However, it isn’t made for researchers
-<ul>
-<li class="fragment">It isn’t designed to measure a construct</li>
-<li class="fragment">We have to do the work to create measures that measure them (and recognize when we can’t)</li>
-</ul></li>
-</ul>
-</section>
-<section id="thanks" class="slide level2">
-<h2>Thanks</h2>
-<ul>
-<li class="fragment">Stay safe</li>
-<li class="fragment">Stay inside</li>
+<li class="fragment">Encoding / Decoding</li>
 </ul>
 </section>
     </div>

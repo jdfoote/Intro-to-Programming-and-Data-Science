@@ -26,6 +26,14 @@ Interviewer: "Where do you see yourself in 5 years?"
 
 <span class='fragment'> Me: "Listening. I would say listening is my biggest weakness."</span>
 
+## Housekeeping
+
+> - Feedback is coming today!
+> - Apologies about assignment confusion on Brightspace
+> - Slides on wiki
+> - How to share API assignments + tonight's assignment?
+
+
 
 ## Cleaning data
 
@@ -58,3 +66,5 @@ Interviewer: "Where do you see yourself in 5 years?"
 >	- We have to do the work to create measures that measure them (and recognize when we can't)
 
 ## HW Review
+
+> - Tamara's solution

@@ -1,0 +1,136 @@
+\documentclass[12pt]{memoir}
+
+\usepackage{cdsc-memoir}
+% there are two chapter styles: cdsc-article and cdsc-memo
+% memo assumes that you remove the "\\" and the email address from the
+% \author field below as well as that you will comment out the
+% \published tag
+\chapterstyle{cdsc-article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+
+<<init, echo=FALSE>>=
+knit_hooks$set(document = function(x) {
+  sub('\\usepackage[]{color}',
+'\\usepackage[usenames,dvipsnames]{color}', x, fixed = TRUE)
+})
+opts_chunk$set(fig.path="figures/knitr-")
+
+@
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[garamond]{mathdesign}
+
+\usepackage[letterpaper,left=1.65in,right=1.65in,top=1.3in,bottom=1.2in]{geometry}
+
+% packages i use in essentially every document
+\usepackage{graphicx}
+\usepackage{enumerate}
+
+% packages i use in many documents but leave off by default
+% \usepackage{amsmath, amsthm, amssymb}
+% \usepackage{dcolumn}
+% \usepackage{endfloat}
+
+% import and customize urls
+\usepackage[breaklinks]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=Black, citecolor=Black, filecolor=Blue,
+    urlcolor=Blue, unicode=true}
+
+% list of footnote symbols for \thanks{}
+\makeatletter
+\renewcommand*{\@fnsymbol}[1]{\ensuremath{\ifcase#1\or *\or \dagger\or \ddagger\or
+ \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+  \or \ddagger\ddagger \else\@ctrerr\fi}}
+\makeatother
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
+
+% add bibliographic stuff 
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[natbib=true, style=apa, backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\DeclareLanguageMapping{american}{american-apa}
+
+\defbibheading{secbib}[\bibname]{%
+  \section*{#1}%
+  \markboth{#1}{#1}%
+  \baselineskip 14.2pt%
+  \prebibhook}
+
+\def\citepos#1{\citeauthor{#1}'s (\citeyear{#1})}
+\def\citespos#1{\citeauthor{#1}' (\citeyear{#1})}
+
+% memoir function to take out of the space out of the whitespace lists
+\firmlists
+
+% LATEX NOTE: these lines will import vc stuff after running `make vc` which
+% will add version control information to the bottom of each page. This can be
+% useful for keeping track of which version of a document somebody has:
+% \input{vc}
+% \pagestyle{cdsc-page-git}
+
+% LATEX NOTE: this alternative line will just input a timestamp at the
+% build process, useful for sharelatex
+% \pagestyle{cdsc-page-sharelatex}
+
+\begin{document}
+
+\setlength{\parskip}{4.5pt}
+% LATEX NOTE: Ideal linespacing is usually said to be between 120-140% the
+% typeface size. So, for 12pt (default in this document, we're looking for
+% somewhere between a 14.4-17.4pt \baselineskip.  Single; 1.5 lines; and Double
+% in MSWord are equivalent to ~117%, 175%, and 233%.
+
+\baselineskip 16pt
+
+\title{Twitter at Purdue}
+\author{Jeremy Foote\\
+        \href{mailto:jdfoote@purdue.edu}{jdfoote@purdue.edu}}
+\date{}
+
+\published{\textsc{\textcolor{BrickRed}{This document is an
+  unpublished draft.\\ Please do not distribute or cite without
+  permission.}}}
+
+\maketitle
+
+<<load_data, echo=FALSE, message=FALSE>>=
+library(tidyverse)
+df = read_csv('../data/purdue_tweets.csv')
+@
+
+\begin{abstract}
+    Which Purdue tweets get the most attention?
+\end{abstract}
+
+\section{Introduction}
+
+
+One might have a number of hypotheses about what influences the number of likes that a tweet receives. In this paper, we show the relationship between the number of followers a user has and how many favorites their tweet receives, using a sample of \Sexpr{nrow(df)} tweets made in and around West Lafayette, Indiana.
+
+\begin{figure}
+
+<<twitter_plot, echo=FALSE, message=FALSE>>=
+df %>% ggplot(aes(x=followers+1, y = favorite_count)) + 
+geom_point() + scale_x_log10() + theme_minimal()
+
+@
+
+\label{fig:twitter_plot}
+\caption{The number of followers that a user have is on the X axis, and the number of likes the tweet received is on the Y}
+\end{figure}
+
+
+
+
+% bibliography here
+\setcounter{biburlnumpenalty}{9001}
+\printbibliography[title = {References}, heading=secbib]
+
+
+\end{document}
+
+%  LocalWords:  

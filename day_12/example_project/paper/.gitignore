@@ -1,0 +1,17 @@
+/auto/
+/cache/
+/vc
+/refs-processed.bib
+/*.aux
+/*.bbl
+/*.blg
+/*.log
+/*.out
+/*.pdf
+/*.fdb_latexmk
+/*.fls
+/*.ttt
+/*.bcf
+/*.run.xml
+/figures/*
+/*.tex

@@ -30,6 +30,10 @@ Not Happy.
 
 ## Housekeeping
 
+> - Additional final project examples
+>	- Please don't share beyond class members
+>  - Continue to submit coding challenges
+> - Reach out for help if needed!!
 
 ## Statistics in Python
 
@@ -37,9 +41,6 @@ Not Happy.
 > - My workflow uses Python to collect data and create measures, then R to do statistics and create visualizations
 > - Can also export to SPSS, Stata, or whatever. Everything reads CSV files!
 > - Python is great for ML, OTOH
-
-
-## Github Tour
 
 
 ## HW Review

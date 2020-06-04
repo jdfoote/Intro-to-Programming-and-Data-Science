@@ -1,0 +1,46 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+I was robbed by 6 dwarfs today.
+
+<span class='fragment'>
+Not Happy.
+</span>
+
+## Housekeeping
+
+
+## Statistics in Python
+
+> - Meh :)
+> - My workflow uses Python to collect data and create measures, then R to do statistics and create visualizations
+> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files!
+> - Python is great for ML, OTOH
+
+
+## Github Tour
+
+
+## HW Review
+

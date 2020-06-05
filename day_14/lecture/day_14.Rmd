@@ -1,0 +1,49 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+Shout out to people wondering what the opposite of in is.
+
+
+## Housekeeping
+
+> - Intermediate Python
+>	- I will post videos / resources on the wiki next week
+>	- Regular expressions, list comprehensions, classes, debugging, finding help
+>	- What else should I include?
+> - Self-assessment reflections
+> - What did y'all use for git? I'd like to point future students to resources
+
+## Web scraping
+
+> - Python impersonates a web browser
+> - HTML instead of JSON
+> - requests
+> - BeautifulSoup
+> - Selenium
+> - scrapy
+> - splinter
+
+
+## HW Review
+

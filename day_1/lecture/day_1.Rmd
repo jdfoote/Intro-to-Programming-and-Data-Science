@@ -57,22 +57,43 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - It's going to be intense! :)
 > - But we can do it!
-> - 10 AM - Recorded lecture
-> - 11 AM - Co-working / office hours
+> - 1 PM - discussion of example paper
+> - ~1:30 - review of concepts/homework questions
+> - ~2:30 - Co-working / office hours
 > - OH by appointment
 
 ## Day-to-day
 
+> - Example paper
+>	- One person will present each day + lead discussion
+>	- Others will skim
+> - Lecture
+>	- Recorded lecture on coding topic
+>	- Notebook to follow along - download and run each day
+>	- Class time focused on counfusions + Coding Challenges
 > - Coding Challenges
-> - Readings
+>	- Random "cold calling" for reviewing solutions
+>	- 5-10 minutes in small groups to prepare
+
+## Coding Challenges
+
+> - Exercises from the book
+> - Jupyter Notebooks
+> - Suggested approach:
+>	- Try on your own
+>	- Work with a partner
+>	- Ask questions on Discord
+>	  - Surround code with three backticks (```)
+>	- Look up solutions (where available)
+
 
 ## Final Project
 
-> - I'm compiling some example projects
-> - Whatever is most valuable for you
+> - Default option
 >	- Jupyter notebook
 >	- Methods + result section of paper
->	- Replication
+> - Replication
+> - Do what is best for your future goals
 
 ## Project Milestones
 
@@ -83,6 +104,8 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Grades
 
+> - Goal is learning
+> - Two self-assessment reflections
 
 # Resources
 
@@ -90,19 +113,18 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Schedule
 > - Links to readings
+> - Slides and videos may be from older versions of the class
+>	- I will try to stay 2 days ahead
 
 ## Brightspace
 
 > - Readings
-> - Discussion board
->	- Upload a video
->	- Discussion
 > - Example Projects
 
-## Piazza
+## Discord
 
 > - Post questions and help each other
-> - Daily random assignments as "answerer"
->	- Starting with tomorrow's HW
+> - Synchronous meetings
+> - Office Hours
 
 ## Anaconda / Jupyter Intro

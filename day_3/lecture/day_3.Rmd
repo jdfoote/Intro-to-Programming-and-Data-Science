@@ -7,7 +7,6 @@ output:
     transition: convex
     self_contained: true
     css: ../../libs/css/custom_css.css
-    reveal_plugins: ["notes"]
     lib_dir: ../../libs
 ---
 

@@ -6,7 +6,7 @@ output:
     progress: true
     transition: convex
     self_contained: true
-    css: ../../resources/css/custom_css.css
+    css: ../../libs/css/custom_css.css
 ---
 
 ```{r setup, include=FALSE}

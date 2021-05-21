@@ -1,0 +1,57 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+Did you hear about the mathematician who was afraid of negative numbers?
+
+<span class='fragment'>
+He would stop at nothing to avoid them
+</span>
+
+## Housekeeping
+
+> - Feedback on planning documents is in Brightspace
+
+## Principles for code organization
+
+> - 3 directories
+>	- code
+>	- data
+>	- paper
+
+
+## Reproducible workflows and best practices
+
+> - The idea is to be able to fix any step in the workflow and have the rest run with minimal problems
+>	- Data updates
+>	- Bugs
+>	- Changes to measures or questions
+> - Save raw data
+> - Run code in order
+> - Write comments! (or text in Jupyter)
+
+## Github Tour
+
+
+## HW Review
+

@@ -1,0 +1,86 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+My neighbor had the nerve to ring my doorbell at 3 o'clock in the morning.
+
+<span class='fragment'> Luckily I was still up playing the drums. </span>
+
+## Housekeeping
+
+> - Self-assessment reflection
+> - Ping in chat if you want to talk
+
+## Ethics in online data
+> - Some dangers
+>	- Privacy
+>	- Transparency
+>	  - Data is "exhaust" and people may not know it exists
+>	  - What is "public" data? Expected audiences may differ greatly
+>	  - Informed consent is difficult
+>	- Unintended consequences
+>	  - Data can be aggregated or used by bad actors
+>	  - Salganik gives 18 examples of states using population data for genocide/forced migration
+
+## Ethics in online data
+> - More dangers!
+>	- Data release
+>	  - Data can be "de-anonymized"
+>	  - NYC taxi data
+>	  - Medical records + voting records
+>	- Generalization
+>	  - Twitter users != all people
+>	  - Most active users != all users
+
+## Balance is needed
+
+What are the dangers of too much caution?
+> - Emotional contagion as example case
+
+## Some principles
+
+> - Respect for persons, beneficence, justice, respect for law, and public interest
+> - Think through possible harms to participants and the systems
+> - Do work that has benefits
+> - Consult with others
+> - Assume that data is sensitive
+> - Aggregate when possible
+> - Notify participants of data collection and obtain consent when possible
+> - Alter quotes/usernames
+> - Share research with participants
+
+## Working with online data
+
+> - Save the raw data
+> - Make your process reproducible
+
+## Limitations of online data
+
+> - Found, not made
+> - Missing (sometimes invisibly)
+> - Can result from changing/hidden processes
+
+## Day 9 challenge
+
+> - API mini-project
+> - How/where to share?

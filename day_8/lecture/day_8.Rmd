@@ -1,0 +1,53 @@
+---
+pagetitle: Intro to APIs
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+
+Within minutes, the detective knew exactly what the murder weapon was.
+
+<span class='fragment'>
+It was a brief case.
+</span>
+
+## Housekeeping
+
+> - Self-assessment reflection and planning document
+
+
+## Scraping Data
+
+> - Three main ways of getting web data:
+>	- Downloading
+>	- APIs
+>	- Scraping
+
+## API Notebook
+
+## Homework
+
+> - Project Planning Document and self-reflection
+> - Coding assignments due on Monday
+
+## Review
+
+> - Faceting

@@ -1,0 +1,126 @@
+---
+pagetitle: Computational Thinking
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+source("resources/preamble.R")
+library(reticulate)
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+# Day 2
+
+## Dad Joke
+
+> - Where do you take someone who has been injured in a hide-and-seek accident?
+> - To the I.C.U.
+
+## Housekeeping
+
+> - Solutions for Day 2 aren't due until morning of Day 3 (i.e., tomorrow)
+
+# Programming Principles
+
+## Introduction
+
+> - Python holds things in RAM, and writes to secondary memory / disk
+> - Running Python
+>	- Terminal
+>	  - Interactive
+>	- Command line
+>	- Jupyter
+> - Python is interpreted, not compiled
+
+## Debugging
+
+> - Common bugs
+>	- Syntax
+>	- Intermediate objects
+>	- Complexity
+> - Strategies
+>	- Read through the code
+>	- Make things visible
+>	- Simplify
+
+## Variables
+
+> - Name that stores data
+> - Has different types, e.g.:
+>	- Strings
+>	- Integers
+>	- Floats
+>	- Lists
+>	- Dictionaries
+> - Can't start with a number
+> - Usually written_like_this
+> - If it's not saved to a variable (or to disk), it's gone!
+
+## Conditionals
+
+> - Control flow
+>	- Run different parts of the code depending on the "state"
+> - Conditionals depend on booleans
+>	- Expressions that evaluate to `True` or `False`
+>	- `<`, `>`, `>=`, `<=`, `==`, `!=`, `in`, or `not in`
+>	- They are evaluated in order and can "short circuit"
+
+## Example of a conditional
+
+```{python, echo=TRUE}
+#x = input("How many hours have you been working on this homework?")
+x = 6
+if x > 5 or xy == 45:
+  print("That's too long!")
+
+```
+
+## Functions
+
+> - Pieces of code that you want to reuse
+>	- Often take in "arguments"
+>	- They do something with the arguments, and often "return" something
+
+## Types of functions
+
+> - Built in functions
+>	- print()
+>	- type()
+> - Modules / libraries
+>	- import random
+>	- random.randint(1,5)
+
+
+## Example function
+
+```{python, echo=TRUE}
+
+def exclaim(s):
+  # Changes a normal string into an exclamation!
+  s = s.upper()
+  return s + '!!'
+  
+exclaim("Hello, everyone")
+
+```
+
+
+# HW Review
+
+## Day 1
+
+> - How did it go?
+> - What do you still have questions about?

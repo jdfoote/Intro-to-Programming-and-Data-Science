@@ -1,0 +1,49 @@
+---
+pagetitle: COM 674 - Day 7
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+A thief stole my anti-depressant medication:
+
+<span class='fragment'>
+I hope he's happy!
+</span>
+
+
+## Housekeeping
+
+
+## Agenda for today
+
+> - More pandas
+> - Intro to seaborn and visualization
+
+## Solution sharing
+
+Jupyter notebook exercises
+
+> - Average comment length by subreddit
+> - Comment count and average score
+> - Comments per month
+> - Line for each day of the week
+
+

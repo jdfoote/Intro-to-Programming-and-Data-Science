@@ -1,0 +1,51 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Weekly Dad Joke
+
+I accidentally swallowed a bunch of scrabble tiles.
+
+
+My next trip to the bathroom could spell disaster.
+
+## Housekeeping
+
+> - Feeling a bit overwhelmed
+>	- This makes sense :)
+> - Suggestion
+>	- Move readings to every other day, only responsible to lead once
+> - When to do code examples/reviews?
+>	- During or after "lecture"?
+> - DataCamp
+
+## Homework Confusions
+
+> - Finding key items in a dictionary / list (largest, smallest, etc.)
+
+
+
+## Principles for this week
+
+> - pandas
+> - dataframes
+> - Visualization
+

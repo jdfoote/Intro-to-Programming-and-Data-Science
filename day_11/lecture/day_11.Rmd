@@ -1,0 +1,70 @@
+---
+pagetitle: COM 674
+output: 
+  revealjs::revealjs_presentation:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: true
+    css: ../../resources/css/custom_css.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+Interviewer: "Where do you see yourself in 5 years?"
+
+<span class='fragment'> Me: "Listening. I would say listening is my biggest weakness."</span>
+
+## Housekeeping
+
+> - Feedback is coming today!
+> - Apologies about assignment confusion on Brightspace
+> - Slides on wiki
+> - How to share API assignments + tonight's assignment?
+
+
+
+## Cleaning data
+
+> - Why is data 'dirty'?
+>	- Errors in transcription
+>	- Bugs in software that produced it
+>	- Missing data (e.g., when a date is unknown it's recoded as Jan 1)
+>	- Can't be read by software
+>	  - Wrong date format
+>	  - Multiple age formats - e.g., '4', '4 yo', '4 years'
+>	- Observations that shouldn't be in the analysis
+>	- Inappropriate for statistical tests
+>	  - log-transformations
+>	  - Coding groups (e.g., high-risk and low-risk)
+
+## Operationalization
+
+> - Making a construct measurable
+>	- Constructs are not empirical and can't be tested directly
+>	- We must argue that our measures represent or at least are correlated with the concepts we really care about
+>	- Hypotheses relate concepts together, e.g., "socially cohesive groups are more willing to contribute to shared goals"
+>	- In order to test this, need to argue that you have something that represents social cohesion, and something that represents shared goals.
+
+## Online data
+
+> - Online data is "raw"
+>	- This is generally wonderful - we have actual conversations, full text, etc.
+> - However, it isn't made for researchers
+>	- It isn't designed to measure a construct
+>	- We have to do the work to create measures that measure them (and recognize when we can't)
+
+## HW Review
+
+> - Tamara's solution

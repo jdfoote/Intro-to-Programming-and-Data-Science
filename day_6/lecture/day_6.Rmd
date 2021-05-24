@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -25,27 +26,23 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 I accidentally swallowed a bunch of scrabble tiles.
 
 
-My next trip to the bathroom could spell disaster.
+> - My next trip to the bathroom could spell disaster.
 
 ## Housekeeping
 
-> - Feeling a bit overwhelmed
->	- This makes sense :)
-> - Suggestion
->	- Move readings to every other day, only responsible to lead once
-> - When to do code examples/reviews?
->	- During or after "lecture"?
-> - DataCamp
+> - How are people doing?
+> - For real?
+> - Project Planning Doc
+> - Self assessment doc
+> - APIs coming up this week
+
+## Paper Discussion
+
+Anna
+
+- Benefield, G. A., Shen, C., & Leavitt, A. (2016). Virtual Team Networks: How Group Social Capital Affects Team Success in a Massively Multiplayer Online Game.
+
 
 ## Homework Confusions
 
-> - Finding key items in a dictionary / list (largest, smallest, etc.)
-
-
-
-## Principles for this week
-
-> - pandas
-> - dataframes
-> - Visualization
 

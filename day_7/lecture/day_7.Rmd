@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674 - Day 7
+title: COM 674 - Day 7
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs/
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +23,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Dad Joke
 
-A thief stole my anti-depressant medication:
+A thief stole my anti-depressant medication.
 
 <span class='fragment'>
 I hope he's happy!
@@ -31,19 +32,14 @@ I hope he's happy!
 
 ## Housekeeping
 
+> - Twitter authentication
+> - Project planning doc
 
-## Agenda for today
+## Paper discussion
 
-> - More pandas
-> - Intro to seaborn and visualization
+Lazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.
 
-## Solution sharing
-
-Jupyter notebook exercises
-
-> - Average comment length by subreddit
-> - Comment count and average score
-> - Comments per month
-> - Line for each day of the week
+Discussant: Yong
 
 
+## Review

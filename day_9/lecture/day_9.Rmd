@@ -5,7 +5,7 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
+    self_contained: false
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs/
 ---

@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674
+title: COM 674 - Day 10
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -29,27 +30,15 @@ For years, my parents sent me to a child psychologist.
 
 ## Housekeeping
 
-> - A model for engaging with readings
->	- A continued, asynchronous conversation
-> - Example projects
+> - Feedback this weekend
+> - No class on Monday
+> - Group "project"
 
+## Paper discussion
 
-## Computational Text Analysis
+Christopher A. Bail et al. 2018. Exposure to opposing views on social media can increase political polarization. PNAS 115(37): 9216-9221
 
-> - Overlapping terms: NLP, computational linguistics
-> - A really big area with lots of applications across a lot of fields
->	- Machine translation
->	- Linguistics
->	- Communication
-> - In other words, one day is not long enough to give any sort of competency.
-
-## Common uses of text analysis in Communication and adjacent disciplines
-
-> - LIWC
-> - Sentiment analysis
-> - Classification
-> - Topic modeling
+Discussant: Caitlyn
 
 ## HW review
 
-> - Encoding / Decoding

@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -28,11 +29,38 @@ Interviewer: "Where do you see yourself in 5 years?"
 
 ## Housekeeping
 
-> - Feedback is coming today!
-> - Apologies about assignment confusion on Brightspace
-> - Slides on wiki
-> - How to share API assignments + tonight's assignment?
+> - Proposal feedback is in
+> - Self evals overview
+>	- Please share confusions!
+> - Data collection probably needs to be happening
+> - JuptyerLab
+> - The rest of the class
+>	- Git tonight
+>	- Stats
+>	- Screen scraping
+>	- Additional topics
 
+
+## Paper review
+
+Sara Klingenstein, Tim Hitchcock, and Simon DeDeo. 2014. The civilizing process in London’s Old Baily. Proceedings of the National Academy of Sciences
+
+
+## How can we detect changes in culture?
+
+> - Digitization of historical records allows for comparison across time
+>	- Google N-gram viewer
+>	- Censuses
+> - This paper uses court transcripts from London's Old Bailey courthouse from 1760s-1910s
+
+## Violent and non-violent offenses are talked about differently
+
+<img src='images/old_bailey.jpg' style='width:35%;'/>
+
+## Some questions
+
+> - What are some of the dangers of doing this kind of work?
+> - What are some computational methods that are becoming "normalized" in your discipline?
 
 
 ## Cleaning data
@@ -67,4 +95,3 @@ Interviewer: "Where do you see yourself in 5 years?"
 
 ## HW Review
 
-> - Tamara's solution

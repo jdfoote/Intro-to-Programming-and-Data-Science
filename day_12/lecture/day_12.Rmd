@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -30,7 +31,13 @@ He would stop at nothing to avoid them
 
 ## Housekeeping
 
-> - Feedback on planning documents is in Brightspace
+
+## Paper Discussion
+
+DellaPosta, D., Shi, Y., & Macy, M. (2015). Why Do Liberals Drink Lattes? American Journal of Sociology, 120(5), 1473–1511.
+
+Discussant: Lucy
+
 
 ## Principles for code organization
 
@@ -49,8 +56,6 @@ He would stop at nothing to avoid them
 > - Save raw data
 > - Run code in order
 > - Write comments! (or text in Jupyter)
-
-## Github Tour
 
 
 ## HW Review

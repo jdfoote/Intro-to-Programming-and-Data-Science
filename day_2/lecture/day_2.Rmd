@@ -1,18 +1,18 @@
 ---
-pagetitle: Computational Thinking
+pagetitle: Day 2 - 
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
     self_contained: true
-    css: ../../resources/css/custom_css.css
+    css: ../../libs/css/custom_css.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
+#source("resources/preamble.R")
 library(reticulate)
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
@@ -31,9 +31,57 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - Solutions for Day 2 aren't due until morning of Day 3 (i.e., tomorrow)
+> - Sorry about due date times
+> - And Discussant dates!
+> - Identifying a dataset
+> - We will cover:
+>	- Reddit
+>	- Twitter
+> - Also, consider existing datasets
+>	- Link added on wiki
+> - How to lead discussions?
+>	- Powerpoint
+>	- "Handout"
+>	- Be creative
 
-# Programming Principles
+## Plan for the day
+
+> - Bit by bit conversation
+> - Breakout groups
+> - Topic review
+> - Problem set review
+
+# Bit by Bit
+
+## Summary
+
+> - Blumenstock et al. example
+>	- Using call records of 1.5m people to estimate wealth
+> - The world is being measured
+>	- It is very, very easy to store digital data, and more and more things are becoming digital
+> - This is ushering in a new era for social scientists
+
+## Research design
+
+> - Ready-made vs custom made
+>	- Ready-made data was created for another purpose (e.g., digital trace data)
+>	- Custom made data is designed to answer the question (e.g., surveys or experiments)
+
+## Questions
+
+> - What did you think of the distinction between ready made and custom made data? Are there kinds of research that don't fit neatly into one or the other? What other dimensions can we classify research along?
+> - Are there different ethical concerns when using one type of data or the other?
+> - What are the different analytic concerns for each type of data?
+
+## HW Review
+
+> - Select respondents (will the bot work?)
+> - Breakout groups
+>	- Identify things that you are still confused about
+
+
+# Supplemental slides
+
 
 ## Introduction
 
@@ -118,9 +166,3 @@ exclaim("Hello, everyone")
 ```
 
 
-# HW Review
-
-## Day 1
-
-> - How did it go?
-> - What do you still have questions about?

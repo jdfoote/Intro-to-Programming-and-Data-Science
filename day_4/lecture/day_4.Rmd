@@ -5,14 +5,14 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs/
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
@@ -31,22 +31,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - I will give feedback today
-> - Grades!!!
->	- Two self-assessments
->	- Mostly based on the final project
+> - I will give feedback by tomorrow on ideas
+> - Videos + textbook strategy
+> - Signing up for Twitter
+
+## Paper Discussion
 
 ## Questions from homework
 
-> - `=` vs. `==`
-> - `except`
-> - for vs. while
-> - alias
-
-## Principles for this week
-
-> - Opening, reading, and writing to files
-
-## Homework
-
-> - A few (hard) problems

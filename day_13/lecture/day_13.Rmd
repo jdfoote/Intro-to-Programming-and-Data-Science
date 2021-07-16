@@ -1,12 +1,13 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -30,10 +31,19 @@ Not Happy.
 
 ## Housekeeping
 
-> - Additional final project examples
+> - Final project examples
 >	- Please don't share beyond class members
->  - Continue to submit coding challenges
 > - Reach out for help if needed!!
+
+## Paper Discussion
+
+Tracing Community Genealogy
+
+## Discussion
+
+> - What is the role of descriptive work like this?
+> - What are some ways to think of relational/ecological aspects of your work?
+
 
 ## Statistics in Python
 

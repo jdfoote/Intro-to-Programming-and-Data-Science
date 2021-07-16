@@ -1,18 +1,18 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs/
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
@@ -29,21 +29,11 @@ Brochure
 
 ## Housekeeping
 
-> - Project idea peer feedback?
-> - More Piazza tips
+> - Project idea feedback is posted
+
+## Paper discussion
+
+Katelyn
 
 ## Review
 
-> - Longest string where no character appears more than one time
-> - First Wordplay
-> - exit() command
-> - Strategies for retention
-
-## Principles for this week
-
-> - Dictionaries
-> - Tuples
-
-## Homework
-
-> - Baby names project

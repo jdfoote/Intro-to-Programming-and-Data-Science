@@ -5,14 +5,14 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = './')
-source("resources/preamble.R")
 
 f <- function (x) {formatC(x, format="d", big.mark=',')}
 bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
@@ -24,32 +24,49 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Dad Joke
 
-- What did the French man say when he went down the slide?
-
+> - What did the French man say when he went down the slide?
 > - Yeeesss!
 
 ## Housekeeping
 
-> - DataCamp
+> - Ideas for projects due today
+>	- Feedback within the next few days
+> - Pep talk :)
+>	- It's OK to be lost
+>	- It's OK to pass on HW questions
+> - I may need to leave early today
 
-## Questions from homework
+## Paper discussion
 
-> - Zero indexing
-> - Restarting Jupyter
+## Concepts we skipped
+
+> - Importing
 > - Comments in code
-> - Formatting in Piazza
->	- Note for solutions, question for questions
->	- Begin with SOLUTION
->	- Include question text
->	- Add a verbal explanation and/or code comments
->	- Formatting code
-> - Metadiscussion: Could our approach be improved?
+> - Functions
 
-## Other questions?
+<div class='fragment'>
+```{python, echo=TRUE}
 
-## Programming Concepts
+def exclaim(s):
+  # Changes a normal string into an exclamation!
+  s = s.upper()
+  return s + '!!'
+  
+exclaim("Hello, everyone")
 
-> - Open the ipynb file on the wiki
+```
+</div>
 
-## Wordplay exercises
+## Concepts we skipped
+
+> - Debugging
+>	- print()
+>	- intermediate outputs
+>	- KISS
+>	  - Simple functions
+>	  - Understandable variable names
+
+## Other concepts that are confusing?
+
+## Review
 

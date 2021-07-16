@@ -6,7 +6,7 @@ output:
     progress: true
     transition: convex
     self_contained: true
-    css: ../../resources/css/custom_css.css
+    css: ../../libs/css/custom_css.css
 ---
 
 ```{r setup, include=FALSE}
@@ -22,11 +22,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 # Welcome to COM 674!
 
-## Introductions
-
 ## About Me
 
-<img class = 'fragment' src = './images/the_fam.jpg' style="width: 80%;"/>
+<img class = 'fragment' src = './images/the_fam.jpg' style="width: 40%;"/>
+
+## Introductions
 
 ## Dad Joke
 
@@ -36,12 +36,6 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 # The Class
 
-## Goals
-
-> - Learn basic programming
-> - Be able to collect and visualize data from the web
-> - Present computational research
-> - Read and evaluate computational social science research
 
 ## Programming provides exciting opportunities for social scientists
 
@@ -51,38 +45,77 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 >	- NLP
 >	- Simulation
 >	- Large-scale experiments
+> - There is value in "thinking like a computer"
 
+## Goals
 
-## About the class
+> - Learn basic programming
+> - Be able to collect and visualize data from the web
+> - Present computational research
+> - Read and evaluate computational social science research
+
+## This is an intense "bootcamp" intended to teach the basics of skills used by computational social scientists
 
 > - It's going to be intense! :)
 > - But we can do it!
-> - 10 AM - Recorded lecture
-> - 11 AM - Co-working / office hours
-> - OH by appointment
+> - Week 1: Python for Everybody
+> - Week 2: Pandas, visualizations, and APIs
+> - Week 3: Data cleaning, version control, etc.
+> - Week 4: Work on final project
 
 ## Day-to-day
 
+> - Example paper
+>	- One person will present each day + lead discussion
+>	- Others will skim
+> - Lecture
+>	- Recorded lecture on coding topic
+>	- Notebook to follow along - download and run each day
+>	- Class time focused on counfusions + Coding Challenges
 > - Coding Challenges
-> - Readings
+>	- Random "cold calling" for reviewing solutions
+>	- 5-10 minutes in small groups to prepare
+> - Let me know what isn't working
+
+
+## Synchronous classes
+
+> - 1 PM - discussion of example paper
+> - ~1:30 - review of concepts/homework questions
+> - ~2:30 - Co-working / office hours
+> - OH by appointment
+
+## Coding Challenges
+
+> - Exercises from the book
+> - Jupyter Notebooks
+> - Suggested approach:
+>	- Try on your own
+>	- Work with a partner
+>	- Ask questions on Discord
+>	  - Surround code with three backticks (```)
+>	- Look up solutions (where available)
+
 
 ## Final Project
 
-> - I'm compiling some example projects
-> - Whatever is most valuable for you
+> - Default option
 >	- Jupyter notebook
 >	- Methods + result section of paper
->	- Replication
+> - Replication?
+> - Do what is best for your future goals
 
 ## Project Milestones
 
 > - Final project
->	- Really quickly identify a dataset and general plan
->	- Project planning doc
->	- Project presentation + report
+>	- Really quickly identify a dataset and general plan (Week 1)
+>	- Project planning doc (Week 2)
+>	- Project presentation + report (Week 4)
 
 ## Grades
 
+> - Goal is learning
+> - Two self-assessment reflections
 
 # Resources
 
@@ -90,19 +123,18 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Schedule
 > - Links to readings
+> - Slides and videos may be from older versions of the class
+>	- I will try to stay 2 days ahead
 
 ## Brightspace
 
 > - Readings
-> - Discussion board
->	- Upload a video
->	- Discussion
 > - Example Projects
 
-## Piazza
+## Discord
 
 > - Post questions and help each other
-> - Daily random assignments as "answerer"
->	- Starting with tomorrow's HW
+> - Synchronous meetings
+> - Office Hours
 
 ## Anaconda / Jupyter Intro

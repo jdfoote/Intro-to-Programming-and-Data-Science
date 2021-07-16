@@ -1,0 +1,36 @@
+Baby Names Project - Community Data Science Workshops
+=======================================================================
+
+These are example programs for use in the Community Data Science
+Workshops.  Detail about this project is kept in the CDSW wiki:
+
+http://wiki.communitydata.cc/Baby_Names
+
+In our workshops, mentors and teachers will introduce and walk through
+the three example programs included in this archive (i.e.,
+babynames1.py, babynames2.py, and babynames3.py).
+
+After we have introduced these files, we will walk through a set of
+coding challenges or exercises. The recommended exercises are
+detailed here although we encourage learners to explore, play, and try
+things out:
+
+http://wiki.communitydata.cc/Baby_Names#Ideas_for_exercises
+
+
+Copyright and Credit
+=======================================================================
+Copyright ⓒ 2014-2015  Benjamin Mako Hill (http://mako.cc/)
+
+Released as free software under the GNU General Public License v3 or
+any later version.
+
+Data for this project (the txt files) are downloaded from the US
+Social Security administration and are public domain:
+
+http://www.ssa.gov/oact/babynames/limits.html
+
+More details about the CDSW is available here:
+
+http://wiki.communitydata.cc/Community_Data_Science_Workshops
+

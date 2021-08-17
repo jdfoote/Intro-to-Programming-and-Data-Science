@@ -1,5 +1,5 @@
 ---
-pagetitle: Welcome
+pagetitle: Welcome to COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
@@ -58,10 +58,10 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - It's going to be intense! :)
 > - But we can do it!
-> - Week 1: Python for Everybody
-> - Week 2: Pandas, visualizations, and APIs
-> - Week 3: Data cleaning, version control, etc.
-> - Week 4: Work on final project
+> - Module 1: Python for Everybody
+> - Module 2: Pandas, visualizations, and APIs
+> - Module 3: Data cleaning, version control, etc.
+> - Module 4: Work on final project
 
 ## Day-to-day
 
@@ -71,19 +71,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Lecture
 >	- Recorded lecture on coding topic
 >	- Notebook to follow along - download and run each day
->	- Class time focused on counfusions + Coding Challenges
+>	- Class time focused on confusions + Coding Challenges
 > - Coding Challenges
 >	- Random "cold calling" for reviewing solutions
->	- 5-10 minutes in small groups to prepare
-> - Let me know what isn't working
+> - Co-working
 
-
-## Synchronous classes
-
-> - 1 PM - discussion of example paper
-> - ~1:30 - review of concepts/homework questions
-> - ~2:30 - Co-working / office hours
-> - OH by appointment
 
 ## Coding Challenges
 
@@ -108,14 +100,14 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Project Milestones
 
 > - Final project
->	- Really quickly identify a dataset and general plan (Week 1)
->	- Project planning doc (Week 2)
->	- Project presentation + report (Week 4)
+>	- Identify a dataset and general plan (September 9)
+>	- Project planning doc (October 21)
+>	- Project presentation + report (December 9 and 15)
 
 ## Grades
 
 > - Goal is learning
-> - Two self-assessment reflections
+> - Three self-assessment reflections
 
 # Resources
 
@@ -124,7 +116,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Schedule
 > - Links to readings
 > - Slides and videos may be from older versions of the class
->	- I will try to stay 2 days ahead
+>	- I will try to stay 2 weeks ahead
 
 ## Brightspace
 
@@ -134,7 +126,6 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Discord
 
 > - Post questions and help each other
-> - Synchronous meetings
-> - Office Hours
+> - I will post annoucements
 
 ## Anaconda / Jupyter Intro

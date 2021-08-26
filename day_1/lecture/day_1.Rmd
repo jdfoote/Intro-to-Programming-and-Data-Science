@@ -67,7 +67,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Example paper
 >	- One person will present each day + lead discussion
->	- Others will skim
+>	- Others will be prepared to discuss
 > - Lecture
 >	- Recorded lecture on coding topic
 >	- Notebook to follow along - download and run each day
@@ -82,7 +82,6 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Exercises from the book
 > - Jupyter Notebooks
 > - Suggested approach:
->	- Try on your own
 >	- Work with a partner
 >	- Ask questions on Discord
 >	  - Surround code with three backticks (```)

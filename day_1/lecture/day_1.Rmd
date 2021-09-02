@@ -54,9 +54,8 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Present computational research
 > - Read and evaluate computational social science research
 
-## This is an intense "bootcamp" intended to teach the basics of skills used by computational social scientists
+## This is an intense class intended to teach the basics of skills used by computational social scientists
 
-> - It's going to be intense! :)
 > - But we can do it!
 > - Module 1: Python for Everybody
 > - Module 2: Pandas, visualizations, and APIs

@@ -1,5 +1,5 @@
 ---
-pagetitle: Day 2 - 
+pagetitle: Day 2
 output: 
   revealjs::revealjs_presentation:
     theme: white
@@ -31,14 +31,12 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - Sorry about due date times
-> - And Discussant dates!
 > - Identifying a dataset
 > - We will cover:
 >	- Reddit
 >	- Twitter
 > - Also, consider existing datasets
->	- Link added on wiki
+>	- Link on wiki
 > - How to lead discussions?
 >	- Powerpoint
 >	- "Handout"
@@ -47,7 +45,6 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Plan for the day
 
 > - Bit by bit conversation
-> - Breakout groups
 > - Topic review
 > - Problem set review
 
@@ -59,6 +56,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 >	- Using call records of 1.5m people to estimate wealth
 > - The world is being measured
 >	- It is very, very easy to store digital data, and more and more things are becoming digital
+>	- Computational capacity is also increasing quickly
 > - This is ushering in a new era for social scientists
 
 ## Research design
@@ -66,6 +64,10 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Ready-made vs custom made
 >	- Ready-made data was created for another purpose (e.g., digital trace data)
 >	- Custom made data is designed to answer the question (e.g., surveys or experiments)
+> - Observing behavior
+> - Asking questions
+> - Running experiments
+> - Creating mass collaborations
 
 ## Questions
 
@@ -75,9 +77,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## HW Review
 
-> - Select respondents (will the bot work?)
-> - Breakout groups
+> - Select respondents by bot
+> - A few minutes to think/prepare
 >	- Identify things that you are still confused about
+
+## Wordplay project
 
 
 # Supplemental slides

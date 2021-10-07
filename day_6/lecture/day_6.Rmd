@@ -1,5 +1,5 @@
 ---
-title: COM 674
+title: Pandas and Dataframes
 output: 
   revealjs::revealjs_presentation:
     theme: white
@@ -7,7 +7,6 @@ output:
     transition: convex
     self_contained: true
     css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -25,24 +24,38 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 I accidentally swallowed a bunch of scrabble tiles.
 
-
-> - My next trip to the bathroom could spell disaster.
+<span class='fragment'> My next trip to the bathroom could spell disaster.</span>
 
 ## Housekeeping
 
-> - How are people doing?
-> - For real?
 > - Project Planning Doc
 > - Self assessment doc
 > - APIs coming up this week
 
 ## Paper Discussion
 
-Anna
+Shaw, A., & Hill, B. M. (2014). Laboratories of oligarchy? How the iron law extends to peer production. Journal of Communication.
 
-- Benefield, G. A., Shen, C., & Leavitt, A. (2016). Virtual Team Networks: How Group Social Capital Affects Team Success in a Massively Multiplayer Online Game.
+## The Iron Law of Oligarchy
 
+> - As organizations become more complex, a small group of early members gain and exercise power
+> - But this shouldn't be true in online organizations, right?
+>	- Almost definitionally democratic
+>	- Anyone can contribute at any time
+>	- Contributors are volunteers without "real" power
+>	- Technology-mediated communication &rarr; flatter organizations
 
-## Homework Confusions
+## The study
+
+> - Looking at large wikis over time:
+>	- H1: The probability of adding new administrators declines as contributor base grows
+>	- H2: Administrators will contribute more to administrative pages as wiki grows
+>	- H3: Reverts of experienced contributors' edits will grow as wiki grows
+
+## Results
+
+<img src='images/shaw_hill_results.jpg'/>
+
+## Homework Review
 
 

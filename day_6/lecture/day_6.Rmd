@@ -54,7 +54,7 @@ Shaw, A., & Hill, B. M. (2014). Laboratories of oligarchy? How the iron law exte
 
 ## Results
 
-<img src='images/shaw_hill_results.jpg'/>
+<img src='images/shaw_hill_results.jpg' width=60% />
 
 ## Homework Review
 

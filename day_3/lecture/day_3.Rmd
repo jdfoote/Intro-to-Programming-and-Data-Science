@@ -5,7 +5,7 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
+    self_contained: true
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs
 ---
@@ -33,12 +33,57 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 >	- Feedback within the next few days
 > - Pep talk :)
 >	- It's OK to be lost
->	- It's OK to pass on HW questions
-> - I may need to leave early today
+>	- The class is front-loaded; we will slow down
 
-## Paper discussion
+# Paper discussion
 
-## Concepts we skipped
+## Analyzing large datasets is different
+
+> - Often trace data is complete\*
+>	- Doesn't suffer from sampling bias
+>	- But lots of other biases:
+>	  - Sampled population != population of interest
+>	  - Reliant on systems / APIs produced by others
+>	  - Bugs in code
+>	  - Construct validity
+
+## Network analysis
+
+> - Turn relationships into networks
+> - Visual representations can be confusing
+<img class='fragment' src='./images/hairball.png' style="width:60%;"/>
+> - Useful when relationships are important part of understanding a process
+
+## Text analysis
+
+> - Lots of different approaches
+>	- Dictionary
+>	- Sentiment analysis
+
+## Topic modeling
+
+<img class='fragment' src='./images/lda.png' style="width:60%;"/>
+
+> - Goal is to find a set of _k_ topics where each topic is made up of a combination of terms and each document is made up of a combination of topics.
+> - Requires a lot of interpretation
+> - Computational grounded theory (Nelson, 2017) is one attempt to get "best of both worlds"
+
+## Prediction vs inference
+
+> - Differences in focus
+>	- Good at predicting outcomes or understanding the process that leads to outcomes
+> - Prediction approaches
+>	- Training data and test data
+>	- Cross-validation and overfitting
+>	- Cares less about interpretability of the model or connection to theory
+> - Some of these can (and should!) be used by social scientists.
+
+## Reproducibility
+
+> - Code and data can be shared really easily
+> - Replicate this paper?
+
+## Concepts I want to discuss
 
 > - Importing
 > - Comments in code
@@ -57,7 +102,7 @@ exclaim("Hello, everyone")
 ```
 </div>
 
-## Concepts we skipped
+## Concepts I want to discuss
 
 > - Debugging
 >	- print()

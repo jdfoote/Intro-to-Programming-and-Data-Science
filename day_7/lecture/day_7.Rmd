@@ -7,7 +7,6 @@ output:
     transition: convex
     self_contained: true
     css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs/
 ---
 
 ```{r setup, include=FALSE}
@@ -33,13 +32,15 @@ I hope he's happy!
 ## Housekeeping
 
 > - Twitter authentication
+> - Bugs in Day 8
 > - Project planning doc
+> - Self assessment reflection
 
 ## Paper discussion
 
 Lazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.
 
-Discussant: Yong
+Discussant: Elizabeth
 
 
 ## Review

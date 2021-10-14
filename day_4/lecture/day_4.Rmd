@@ -5,7 +5,7 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
+    self_contained: true
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs/
 ---
@@ -31,11 +31,16 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - I will give feedback by tomorrow on ideas
-> - Videos + textbook strategy
 > - Signing up for Twitter
+> - Slow down and review?
 
 ## Paper Discussion
+
+Nelson (2017). Computational Grounded Theory. Sociological Methods and Research.
+
+Discussant: Elizabeth
+
+## Project Idea feedback
 
 ## Questions from homework
 

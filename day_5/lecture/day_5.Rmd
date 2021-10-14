@@ -5,7 +5,7 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
+    self_contained: true
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs/
 ---
@@ -25,15 +25,18 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 Bro, can you hand me that leaflet?
 
+<span class='fragment'>
 Brochure
+</span>
 
 ## Housekeeping
 
 > - Project idea feedback is posted
+> - Plan for next week?
 
 ## Paper discussion
 
-Katelyn
+Moved to next week
 
 ## Review
 

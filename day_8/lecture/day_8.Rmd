@@ -33,15 +33,13 @@ It was a brief case.
 ## Housekeeping
 
 > - Self-assessment reflection and planning document
-> - Day 9 and Day 10 due on Friday
->	- Feel free to keep working on Day 8, too
-> - Breakout rooms?
+>	- Feedback on planning documents next week
 
 ## Paper Discussion
 
 Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28. 
 
-Discussant: Pearlynne
+Discussant: Jeremy
 
 
 ## Scraping Data

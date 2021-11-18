@@ -5,9 +5,8 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
+    self_contained: true
     css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs
 ---
 
 ```{r setup, include=FALSE}
@@ -30,15 +29,16 @@ For years, my parents sent me to a child psychologist.
 
 ## Housekeeping
 
-> - Feedback this weekend
-> - No class on Monday
-> - Group "project"
+> - Data cleaning group project
+> - Time to start thinking seriously about data collection
+> - Reach out if you are stuck
+
 
 ## Paper discussion
 
 Christopher A. Bail et al. 2018. Exposure to opposing views on social media can increase political polarization. PNAS 115(37): 9216-9221
 
-Discussant: Caitlyn
+Discussant: Diane
 
 ## HW review
 

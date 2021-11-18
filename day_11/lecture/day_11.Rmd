@@ -7,7 +7,7 @@ output:
     transition: convex
     self_contained: false
     css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs
+    reveal_plugins: ["notes"]
 ---
 
 ```{r setup, include=FALSE}
@@ -23,25 +23,21 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Dad Joke
 
-Interviewer: "Where do you see yourself in 5 years?"
+When I was a kid we were so poor that we had to share a calculator, and the "X" button didn't even work.
 
-<span class='fragment'> Me: "Listening. I would say listening is my biggest weakness."</span>
+<span class='fragment'> Times were hard. </span>
 
 ## Housekeeping
 
-> - Proposal feedback is in
-> - Self evals overview
->	- Please share confusions!
-> - Data collection probably needs to be happening
-> - JuptyerLab
+> - Start on data collection now
 > - The rest of the class
->	- Git tonight
+>	- Git
 >	- Stats
 >	- Screen scraping
 >	- Additional topics
 
 
-## Paper review
+## Papers
 
 Sara Klingenstein, Tim Hitchcock, and Simon DeDeo. 2014. The civilizing process in London’s Old Baily. Proceedings of the National Academy of Sciences
 
@@ -61,6 +57,19 @@ Sara Klingenstein, Tim Hitchcock, and Simon DeDeo. 2014. The civilizing process 
 
 > - What are some of the dangers of doing this kind of work?
 > - What are some computational methods that are becoming "normalized" in your discipline?
+
+
+## Merton Paper
+
+Merton, Robert K. 1948. The Bearing of Empirical Research upon the Development of Social Theory. American Sociological Review.
+
+## Empirical research for developing theory
+
+> - Empirical work doesn't just verify/test theories
+> - Serendipity: Something odd in data that needs an explanation
+> - Recasting: New aspects become more salient
+> - Refocusing: Advances in procedures lead to attention where things can be measured/tested
+> - Clarification: Operationalizing concepts requires drawing boundaries around them
 
 
 ## Cleaning data

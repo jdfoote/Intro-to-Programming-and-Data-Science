@@ -7,6 +7,8 @@ output:
     transition: convex
     self_contained: false
     css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
+    allow_uptree_lib_dir: True
 ---
 
 ```{r setup, include=FALSE}

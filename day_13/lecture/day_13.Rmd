@@ -8,6 +8,7 @@ output:
     self_contained: false
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs
+    allow_uptree_lib_dir: True
 ---
 
 ```{r setup, include=FALSE}
@@ -37,19 +38,16 @@ Not Happy.
 
 ## Paper Discussion
 
-Tracing Community Genealogy
+Tan, C. (2018). Tracing Community Genealogy. ICWSM
 
-## Discussion
-
-> - What is the role of descriptive work like this?
-> - What are some ways to think of relational/ecological aspects of your work?
+Discussant: Sandra
 
 
 ## Statistics in Python
 
 > - Meh :)
 > - My workflow uses Python to collect data and create measures, then R to do statistics and create visualizations
-> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files!
+> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files*!
 > - Python is great for ML, OTOH
 
 

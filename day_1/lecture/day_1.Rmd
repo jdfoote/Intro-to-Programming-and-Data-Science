@@ -132,10 +132,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Readings
 > - Example Projects
+> - Announcements
 
-## Discord
+## Piazza
 
 > - Post questions and help each other
-> - I will post annoucements
+> - Post solutions to homework problems
 
 ## Anaconda / Jupyter Intro

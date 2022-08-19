@@ -5,8 +5,10 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
+    self_contained: false
     css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
+    allow_uptree_lib_dir: True
 ---
 
 ```{r setup, include=FALSE}
@@ -24,7 +26,17 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## About Me
 
-<img class = 'fragment' src = './images/the_fam.jpg' style="width: 40%;"/>
+<div class='container'>
+<div class='col fragment'>
+<img src='./images/the_fam.jpg'/>
+</div>
+<div class='col fragment'>
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/500px-Wikipedia-logo-v2.svg.png' style='max-width:250px;'>
+</div>
+<div class='col fragment'>
+<img src="https://vignette.wikia.nocookie.net/logopedia/images/c/cd/Reddit_2017_%28Stacked%29.svg/revision/latest/scale-to-width-down/709?cb=20190502124341" style='max-width:250px;'/>
+</div>
+</div>
 
 ## Introductions
 
@@ -65,7 +77,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Day-to-day
 
 > - Example paper
->	- One person will present each day + lead discussion
+>	- One person will present each Thursday + lead discussion
 >	- Others will be prepared to discuss
 > - Lecture
 >	- Recorded lecture on coding topic
@@ -82,7 +94,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Jupyter Notebooks
 > - Suggested approach:
 >	- Work with a partner
->	- Ask questions on Discord
+>	- Ask questions on Piazza
 >	  - Surround code with three backticks (```)
 >	- Look up solutions (where available)
 
@@ -91,21 +103,21 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Default option
 >	- Jupyter notebook
->	- Methods + result section of paper
+>	- Short intro + Methods + Result section of paper
 > - Replication?
 > - Do what is best for your future goals
 
 ## Project Milestones
 
 > - Final project
->	- Identify a dataset and general plan (September 9)
->	- Project planning doc (October 21)
->	- Project presentation + report (December 9 and 15)
+>	- Identify a dataset and general plan (September 6)
+>	- Project planning doc (October 18)
+>	- Project presentation + report (December 6 and 8)
 
 ## Grades
 
 > - Goal is learning
-> - Three self-assessment reflections
+> - Two self-assessment reflections
 
 # Resources
 

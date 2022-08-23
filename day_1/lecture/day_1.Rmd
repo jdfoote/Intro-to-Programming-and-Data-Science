@@ -31,10 +31,10 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 <img src='./images/the_fam.jpg'/>
 </div>
 <div class='col fragment'>
-<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/500px-Wikipedia-logo-v2.svg.png' style='max-width:250px;'>
+<img src='./images/sna.png' style='max-width:250px;'>
 </div>
 <div class='col fragment'>
-<img src="https://vignette.wikia.nocookie.net/logopedia/images/c/cd/Reddit_2017_%28Stacked%29.svg/revision/latest/scale-to-width-down/709?cb=20190502124341" style='max-width:250px;'/>
+<img src="https://vignette.wikia.nocookie.net/logopedia/images/c/cd/Reddit_2017_%28Stacked%29.svg/revision/latest/scale-to-width-down/709?cb=20190502124341" style='max-width:200px;'/>
 </div>
 </div>
 
@@ -54,7 +54,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Digital data is exploding and programming is required to do research at scale
 > - Algorithms mediate more and more interactions and understanding programming can help us to analyze them
 > - Computational methods let us do new things
->	- NLP
+>	- Natural language processing
 >	- Simulation
 >	- Large-scale experiments
 > - There is value in "thinking like a computer"
@@ -76,17 +76,24 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Day-to-day
 
-> - Example paper
->	- One person will present each Thursday + lead discussion
->	- Others will be prepared to discuss
 > - Lecture
 >	- Recorded lecture on coding topic
 >	- Notebook to follow along - download and run each day
 >	- Class time focused on confusions + Coding Challenges
 > - Coding Challenges
 >	- Random "cold calling" for reviewing solutions
+> - Example paper
+>	- One person will present each Thursday + lead discussion
+>	- Others will be prepared to discuss
 > - Co-working
 
+## Readings
+
+> - Getting kind of stale
+>   - Help me find new things to read!
+> - Sign up to present on Google Spreadsheet (up to 2 people)
+>   - Present the work as though you were the researcher
+>   - Everyone else will skim and be prepared to ask questions
 
 ## Coding Challenges
 
@@ -95,8 +102,12 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Suggested approach:
 >	- Work with a partner
 >	- Ask questions on Piazza
->	  - Surround code with three backticks (```)
 >	- Look up solutions (where available)
+
+## Coding Challenge Reviews
+
+> - The coldcaller will choose someone to share in class
+> - Rotation for who is assigned to submit / curate solution on Piazza
 
 
 ## Final Project
@@ -104,7 +115,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Default option
 >	- Jupyter notebook
 >	- Short intro + Methods + Result section of paper
-> - Replication?
+> - Replication
 > - Do what is best for your future goals
 
 ## Project Milestones
@@ -126,7 +137,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Schedule
 > - Links to readings
 > - Slides and videos may be from older versions of the class
->	- I will try to stay 2 weeks ahead
+>	- I will try to stay 1-2 weeks ahead
 
 ## Brightspace
 

@@ -33,7 +33,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Identifying a dataset
 > - We will cover:
->	- Reddit
+>	- Reddit (briefly)
 >	- Twitter
 > - Also, consider existing datasets
 >	- Link on wiki
@@ -44,42 +44,16 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Plan for the day
 
-> - Bit by bit conversation
 > - Topic review
 > - Problem set review
 
-# Bit by Bit
-
-## Summary
-
-> - Blumenstock et al. example
->	- Using call records of 1.5m people to estimate wealth
-> - The world is being measured
->	- It is very, very easy to store digital data, and more and more things are becoming digital
->	- Computational capacity is also increasing quickly
-> - This is ushering in a new era for social scientists
-
-## Research design
-
-> - Ready-made vs custom made
->	- Ready-made data was created for another purpose (e.g., digital trace data)
->	- Custom made data is designed to answer the question (e.g., surveys or experiments)
-> - Observing behavior
-> - Asking questions
-> - Running experiments
-> - Creating mass collaborations
-
-## Questions
-
-> - What did you think of the distinction between ready made and custom made data? Are there kinds of research that don't fit neatly into one or the other? What other dimensions can we classify research along?
-> - Are there different ethical concerns when using one type of data or the other?
-> - What are the different analytic concerns for each type of data?
 
 ## HW Review
 
 > - Select respondents by bot
 > - A few minutes to think/prepare
 >	- Identify things that you are still confused about
+> - Person assigned will make sure there is a good response on Piazza
 
 ## Wordplay project
 
@@ -169,4 +143,29 @@ exclaim("Hello, everyone")
 
 ```
 
+# Bit by Bit
 
+## Summary
+
+> - Blumenstock et al. example
+>	- Using call records of 1.5m people to estimate wealth
+> - The world is being measured
+>	- It is very, very easy to store digital data, and more and more things are becoming digital
+>	- Computational capacity is also increasing quickly
+> - This is ushering in a new era for social scientists
+
+## Research design
+
+> - Ready-made vs custom made
+>	- Ready-made data was created for another purpose (e.g., digital trace data)
+>	- Custom made data is designed to answer the question (e.g., surveys or experiments)
+> - Observing behavior
+> - Asking questions
+> - Running experiments
+> - Creating mass collaborations
+
+## Questions
+
+> - What did you think of the distinction between ready made and custom made data? Are there kinds of research that don't fit neatly into one or the other? What other dimensions can we classify research along?
+> - Are there different ethical concerns when using one type of data or the other?
+> - What are the different analytic concerns for each type of data?

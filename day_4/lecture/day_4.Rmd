@@ -32,15 +32,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Housekeeping
 
 > - Signing up for Twitter
-> - Slow down and review?
+> - Slowing down soon!
+> - Project idea feedback coming very soon (Sorry!)
+> - New papers to read
 
-## Paper Discussion
-
-Nelson (2017). Computational Grounded Theory. Sociological Methods and Research.
-
-Discussant: Elizabeth
-
-## Project Idea feedback
+## Reflection on how things are going
 
 ## Questions from homework
 

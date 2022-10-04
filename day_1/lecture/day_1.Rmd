@@ -6,6 +6,7 @@ output:
     progress: true
     transition: convex
     self_contained: false
+    reveal_plugins: ['notes']
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs
     allow_uptree_lib_dir: True

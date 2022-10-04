@@ -1,12 +1,15 @@
 ---
-pagetitle: Day 2
+title: Day 2
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
+    self_contained: false
+    reveal_plugins: ['notes']
     css: ../../libs/css/custom_css.css
+    lib: ../../libs
+    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -22,7 +25,6 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-# Day 2
 
 ## Dad Joke
 
@@ -31,6 +33,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
+> - Export HW to DOCX or PDF
 > - Identifying a dataset
 > - We will cover:
 >	- Reddit (briefly)
@@ -41,6 +44,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 >	- Powerpoint
 >	- "Handout"
 >	- Be creative
+> - Need one more discussant on Dec 1
 
 ## Plan for the day
 

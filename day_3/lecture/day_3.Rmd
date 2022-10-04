@@ -5,9 +5,10 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
+    self_contained: false
     css: ../../libs/css/custom_css.css
     lib_dir: ../../libs
+    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +21,7 @@ gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
 wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
-# Day 3!
+# Week 3!
 
 ## Dad Joke
 
@@ -34,6 +35,41 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Pep talk :)
 >	- It's OK to be lost
 >	- The class is front-loaded; we will slow down
+
+
+## Concepts I want to discuss
+
+> - Importing
+> - Comments in code
+> - Functions
+
+<div class='fragment'>
+```{python, echo=TRUE}
+
+def exclaim(s):
+  # Changes a normal string into an exclamation!
+  s = s.upper()
+  return s + '!!'
+  
+exclaim("Hello, everyone")
+
+```
+</div>
+
+## Concepts I want to discuss
+
+> - Debugging
+>	- print()
+>	- intermediate outputs
+>	- KISS
+>	  - Simple functions
+>	  - Understandable variable names
+
+## Other concepts that are confusing?
+
+## Code Challenge Review
+
+
 
 # Paper discussion
 
@@ -82,36 +118,3 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Code and data can be shared really easily
 > - Replicate this paper?
-
-## Concepts I want to discuss
-
-> - Importing
-> - Comments in code
-> - Functions
-
-<div class='fragment'>
-```{python, echo=TRUE}
-
-def exclaim(s):
-  # Changes a normal string into an exclamation!
-  s = s.upper()
-  return s + '!!'
-  
-exclaim("Hello, everyone")
-
-```
-</div>
-
-## Concepts I want to discuss
-
-> - Debugging
->	- print()
->	- intermediate outputs
->	- KISS
->	  - Simple functions
->	  - Understandable variable names
-
-## Other concepts that are confusing?
-
-## Review
-

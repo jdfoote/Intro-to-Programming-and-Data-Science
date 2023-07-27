@@ -7,6 +7,8 @@ output:
     transition: convex
     self_contained: false
     css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs/
+    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +36,23 @@ My neighbor had the nerve to ring my doorbell at 3 o'clock in the morning.
 
 Vitak, J., Shilton, K., & Ashktorab, Z. (2016). Beyond the Belmont Principles: Ethical Challenges, Practices, and Beliefs in the Online Data Research Community. Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work & Social Computing, 941–953. 
 
-Discussant: Diane
+Discussant: Keqin
+
+
+## Working with online data
+
+> - Save the raw data
+> - Make your process reproducible
+
+## Limitations of online data
+
+> - Found, not made
+> - Missing (sometimes invisibly)
+> - Can result from changing/hidden processes
+
+# Code Challenge Review
+
+
 
 ## Ethics in online data
 > - Some dangers
@@ -73,16 +91,3 @@ What are the dangers of too much caution?
 > - Notify participants of data collection and obtain consent when possible
 > - Alter quotes/usernames
 > - Share research with participants
-
-## Working with online data
-
-> - Save the raw data
-> - Make your process reproducible
-
-## Limitations of online data
-
-> - Found, not made
-> - Missing (sometimes invisibly)
-> - Can result from changing/hidden processes
-
-# Code Challenge Review

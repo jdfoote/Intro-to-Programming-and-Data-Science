@@ -6,3 +6,4 @@ class_list*
 assignments/
 twitter_authentication.py
 reddit_auth.py
+.vscode/

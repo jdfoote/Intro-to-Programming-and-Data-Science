@@ -5,8 +5,10 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
+    self_contained: false
     css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
+    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -34,11 +36,23 @@ For years, my parents sent me to a child psychologist.
 > - Reach out if you are stuck
 
 
-## Paper discussion
+## Approaches to Computational Text Analysis
 
-Christopher A. Bail et al. 2018. Exposure to opposing views on social media can increase political polarization. PNAS 115(37): 9216-9221
+> - Simple can be powerful
+>   - Custom dictionaries or LIWC
+>   - Using word co-location to identify new dictionary words
+> - TF-IDF
+>   - More for identifying key terms, less for hypothesis testing
+>   - Somewhat inductive
 
-Discussant: Diane
+
+## Approaches to Computational Text Analysis
+> - Topic modeling
+>   - Inductive
+>   - Computational grounded theory
+> - Word embeddings
+>   - Can "interrogate" a set of texts
+
 
 ## HW review
 

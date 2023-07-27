@@ -31,16 +31,12 @@ I hope he's happy!
 
 ## Housekeeping
 
-> - Twitter authentication
-> - Bugs in Day 8
+> - Twitter v2 docs
 > - Project planning doc
 > - Self assessment reflection
 
 ## Paper discussion
 
-Lazer, D., & Radford, J. (2017). Data ex Machina: Introduction to Big Data. Annual Review of Sociology, 43(1), 19–39.
-
-Discussant: Elizabeth
 
 
 ## Review

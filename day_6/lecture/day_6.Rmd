@@ -30,8 +30,11 @@ I accidentally swallowed a bunch of scrabble tiles.
 
 > - Project Planning Doc
 > - Self assessment doc
-> - APIs coming up this week
+> - Twitter API keys
+> - October Break next week
+> - Short class on Thursday
 
+<!--
 ## Paper Discussion
 
 Shaw, A., & Hill, B. M. (2014). Laboratories of oligarchy? How the iron law extends to peer production. Journal of Communication.
@@ -55,6 +58,7 @@ Shaw, A., & Hill, B. M. (2014). Laboratories of oligarchy? How the iron law exte
 ## Results
 
 <img src='images/shaw_hill_results.jpg' width=60% />
+-->
 
 ## Homework Review
 

@@ -37,11 +37,25 @@ Not Happy.
 >	- Please don't share beyond class members
 > - Reach out for help if needed!!
 
-## Paper Discussion
+## Housekeeping
 
-Tan, C. (2018). Tracing Community Genealogy. ICWSM
+> - Intermediate Python
+>	- Regular expressions, list comprehensions, classes, debugging, finding help
+>	- What else should I include?
+> - Self-assessment reflections
+> - Project presentation signup
+> - tinyurl.com/com674fp
+> - Presentation on Thurs?
 
-Discussant: Sandra
+## Web scraping
+
+> - Python impersonates a web browser
+> - HTML instead of JSON
+> - requests
+> - BeautifulSoup
+> - Selenium
+> - scrapy
+> - splinter
 
 
 ## Statistics in Python

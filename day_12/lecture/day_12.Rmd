@@ -34,7 +34,32 @@ He would stop at nothing to avoid them
 
 > - IRB Discussion
 > - Ask for help
-> - Rough draft for peer feedback on December 2?
+> - Rough draft for peer feedback on December 1?
+
+
+## Principles for code organization
+
+> - 3 directories
+>	- code
+>	- data
+>	- paper
+
+
+## Reproducible workflows and best practices
+
+> - The idea is to be able to fix any step in the workflow and have the rest run with minimal problems
+>	- Data updates
+>	- Bugs
+>	- Changes to measures or questions
+> - Save raw data
+> - Run code in order
+> - Write comments! (or text in Jupyter)
+> - Advanced mode: Makefiles, knitr
+
+
+
+
+
 
 ## Paper Discussion
 
@@ -79,25 +104,6 @@ DellaPosta, D., Shi, Y., & Macy, M. (2015). Why Do Liberals Drink Lattes? Americ
 >	- Can agents acting according to theory produce what we see empirically?
 > - Tool for thinking
 >	- How might we expect changes to relate to higher level dynamics?
-
-## Principles for code organization
-
-> - 3 directories
->	- code
->	- data
->	- paper
-
-
-## Reproducible workflows and best practices
-
-> - The idea is to be able to fix any step in the workflow and have the rest run with minimal problems
->	- Data updates
->	- Bugs
->	- Changes to measures or questions
-> - Save raw data
-> - Run code in order
-> - Write comments! (or text in Jupyter)
-
 
 ## HW Review
 > - Wrong branch of the class cloned - oops!

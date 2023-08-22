@@ -63,9 +63,11 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Goals
 
 > - Learn basic programming
-> - Be able to collect and visualize data from the web
-> - Present computational research
+> - Collect data using APIs
+> - Perform basic visualizations using Pandas
+> - Learn about fundamental computational social science techniques
 > - Read and evaluate computational social science research
+> - Meaningfully progress a research project that uses computation
 
 ## This is an intense class intended to teach the basics of skills used by computational social scientists
 
@@ -102,13 +104,15 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Jupyter Notebooks
 > - Suggested approach:
 >	- Work with a partner
->	- Ask questions on Piazza
+>   - Turn on Github Copilot
+>     - Make sure you understand the result!
+>	- Ask questions on Element
 >	- Look up solutions (where available)
 
 ## Coding Challenge Reviews
 
 > - The coldcaller will choose someone to share in class
-> - Rotation for who is assigned to submit / curate solution on Piazza
+> - Rotation for who is assigned to submit / curate solution on Element
 
 
 ## Final Project
@@ -146,9 +150,9 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Example Projects
 > - Announcements
 
-## Piazza
+## Element
 
 > - Post questions and help each other
 > - Post solutions to homework problems
 
-## Anaconda / Jupyter Intro
+## Anaconda / VSCode Intro

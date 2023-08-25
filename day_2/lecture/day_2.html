@@ -49,7 +49,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -62,7 +62,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -508,7 +508,7 @@ style.innerHTML = style_script;
 document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
-    <script src="../../libs/header-attrs-2.14.1.9000/header-attrs.js"></script>
+    <script src="../../libs/header-attrs-2.19.2/header-attrs.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -521,31 +521,36 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="dad-joke" class="slide level2">
 <h2>Dad Joke</h2>
 <ul>
-<li class="fragment">Where do you take someone who has been injured in a hide-and-seek accident?</li>
+<li class="fragment">Where do you take someone who has been injured in a
+hide-and-seek accident?</li>
 <li class="fragment">To the I.C.U.</li>
 </ul>
 </section>
 <section id="housekeeping" class="slide level2">
 <h2>Housekeeping</h2>
 <ul>
-<li class="fragment">Export HW to DOCX or PDF</li>
 <li class="fragment">Identifying a dataset</li>
-<li class="fragment">We will cover:
+<li class="fragment">Good online options:
 <ul>
-<li class="fragment">Reddit (briefly)</li>
-<li class="fragment">Twitter</li>
+<li class="fragment">Reddit</li>
+<li class="fragment">Wikipedia</li>
+<li class="fragment">StackOverflow</li>
 </ul></li>
 <li class="fragment">Also, consider existing datasets
 <ul>
 <li class="fragment">Link on wiki</li>
 </ul></li>
+</ul>
+</section>
+<section id="housekeeping-1" class="slide level2">
+<h2>Housekeeping</h2>
+<ul>
 <li class="fragment">How to lead discussions?
 <ul>
 <li class="fragment">Powerpoint</li>
 <li class="fragment">“Handout”</li>
 <li class="fragment">Be creative</li>
 </ul></li>
-<li class="fragment">Need one more discussant on Dec 1</li>
 </ul>
 </section>
 <section id="plan-for-the-day" class="slide level2">
@@ -558,12 +563,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="hw-review" class="slide level2">
 <h2>HW Review</h2>
 <ul>
-<li class="fragment">Select respondents by bot</li>
-<li class="fragment">A few minutes to think/prepare
+<li class="fragment">Start with small group discussions</li>
+<li class="fragment">Select respondents by bot
 <ul>
-<li class="fragment">Identify things that you are still confused about</li>
+<li class="fragment">Identify things that you are still confused
+about</li>
 </ul></li>
-<li class="fragment">Person assigned will make sure there is a good response on Piazza</li>
+<li class="fragment">Person assigned will make sure there is a good
+response on Element</li>
 </ul>
 </section>
 <section id="wordplay-project" class="slide level2">
@@ -577,7 +584,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <ul>
-<li class="fragment">Python holds things in RAM, and writes to secondary memory / disk</li>
+<li class="fragment">Python holds things in RAM, and writes to secondary
+memory / disk</li>
 <li class="fragment">Running Python
 <ul>
 <li class="fragment">Terminal
@@ -621,7 +629,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </ul></li>
 <li class="fragment">Can’t start with a number</li>
 <li class="fragment">Usually written_like_this</li>
-<li class="fragment">If it’s not saved to a variable (or to disk), it’s gone!</li>
+<li class="fragment">If it’s not saved to a variable (or to disk), it’s
+gone!</li>
 </ul>
 </section>
 <section id="conditionals" class="slide level2">
@@ -629,19 +638,25 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">Control flow
 <ul>
-<li class="fragment">Run different parts of the code depending on the “state”</li>
+<li class="fragment">Run different parts of the code depending on the
+“state”</li>
 </ul></li>
 <li class="fragment">Conditionals depend on booleans
 <ul>
-<li class="fragment">Expressions that evaluate to <code>True</code> or <code>False</code></li>
-<li class="fragment"><code>&lt;</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>, <code>!=</code>, <code>in</code>, or <code>not in</code></li>
-<li class="fragment">They are evaluated in order and can “short circuit”</li>
+<li class="fragment">Expressions that evaluate to <code>True</code> or
+<code>False</code></li>
+<li class="fragment"><code>&lt;</code>, <code>&gt;</code>,
+<code>&gt;=</code>, <code>&lt;=</code>, <code>==</code>,
+<code>!=</code>, <code>in</code>, or <code>not in</code></li>
+<li class="fragment">They are evaluated in order and can “short
+circuit”</li>
 </ul></li>
 </ul>
 </section>
 <section id="example-of-a-conditional" class="slide level2">
 <h2>Example of a conditional</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#x = input(&quot;How many hours have you been working on this homework?&quot;)</span></span>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#x = input(&quot;How many hours have you been working on this homework?&quot;)</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">6</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> x <span class="op">&gt;</span> <span class="dv">5</span> <span class="kw">or</span> xy <span class="op">==</span> <span class="dv">45</span>:</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">&quot;That&#39;s too long!&quot;</span>)</span></code></pre></div>
@@ -653,7 +668,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Pieces of code that you want to reuse
 <ul>
 <li class="fragment">Often take in “arguments”</li>
-<li class="fragment">They do something with the arguments, and often “return” something</li>
+<li class="fragment">They do something with the arguments, and often
+“return” something</li>
 </ul></li>
 </ul>
 </section>
@@ -674,7 +690,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 </section>
 <section id="example-function" class="slide level2">
 <h2>Example function</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exclaim(s):</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Changes a normal string into an exclamation!</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> s.upper()</span>
@@ -693,14 +710,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">Blumenstock et al. example
 <ul>
-<li class="fragment">Using call records of 1.5m people to estimate wealth</li>
+<li class="fragment">Using call records of 1.5m people to estimate
+wealth</li>
 </ul></li>
 <li class="fragment">The world is being measured
 <ul>
-<li class="fragment">It is very, very easy to store digital data, and more and more things are becoming digital</li>
-<li class="fragment">Computational capacity is also increasing quickly</li>
+<li class="fragment">It is very, very easy to store digital data, and
+more and more things are becoming digital</li>
+<li class="fragment">Computational capacity is also increasing
+quickly</li>
 </ul></li>
-<li class="fragment">This is ushering in a new era for social scientists</li>
+<li class="fragment">This is ushering in a new era for social
+scientists</li>
 </ul>
 </section>
 <section id="research-design" class="slide level2">
@@ -708,8 +729,10 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">Ready-made vs custom made
 <ul>
-<li class="fragment">Ready-made data was created for another purpose (e.g., digital trace data)</li>
-<li class="fragment">Custom made data is designed to answer the question (e.g., surveys or experiments)</li>
+<li class="fragment">Ready-made data was created for another purpose
+(e.g., digital trace data)</li>
+<li class="fragment">Custom made data is designed to answer the question
+(e.g., surveys or experiments)</li>
 </ul></li>
 <li class="fragment">Observing behavior</li>
 <li class="fragment">Asking questions</li>
@@ -720,9 +743,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="questions" class="slide level2">
 <h2>Questions</h2>
 <ul>
-<li class="fragment">What did you think of the distinction between ready made and custom made data? Are there kinds of research that don’t fit neatly into one or the other? What other dimensions can we classify research along?</li>
-<li class="fragment">Are there different ethical concerns when using one type of data or the other?</li>
-<li class="fragment">What are the different analytic concerns for each type of data?</li>
+<li class="fragment">What did you think of the distinction between ready
+made and custom made data? Are there kinds of research that don’t fit
+neatly into one or the other? What other dimensions can we classify
+research along?</li>
+<li class="fragment">Are there different ethical concerns when using one
+type of data or the other?</li>
+<li class="fragment">What are the different analytic concerns for each
+type of data?</li>
 </ul>
 </section></section>
     </div>
@@ -736,14 +764,39 @@ document.getElementsByTagName('head')[0].appendChild(style);
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 
 

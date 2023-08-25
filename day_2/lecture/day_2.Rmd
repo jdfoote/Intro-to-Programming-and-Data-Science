@@ -33,18 +33,20 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - Export HW to DOCX or PDF
 > - Identifying a dataset
-> - We will cover:
->	- Reddit (briefly)
->	- Twitter
+> - Good online options:
+>	  - Reddit
+>   - Wikipedia
+>   - StackOverflow
 > - Also, consider existing datasets
 >	- Link on wiki
+
+## Housekeeping
 > - How to lead discussions?
 >	- Powerpoint
 >	- "Handout"
 >	- Be creative
-> - Need one more discussant on Dec 1
+
 
 ## Plan for the day
 
@@ -54,10 +56,10 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## HW Review
 
+> - Start with small group discussions
 > - Select respondents by bot
-> - A few minutes to think/prepare
 >	- Identify things that you are still confused about
-> - Person assigned will make sure there is a good response on Piazza
+> - Person assigned will make sure there is a good response on Element
 
 ## Wordplay project
 

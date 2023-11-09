@@ -20,7 +20,7 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-## Dad Joke
+<!-- # Dad Joke
 
 A thief stole my anti-depressant medication.
 
@@ -28,15 +28,25 @@ A thief stole my anti-depressant medication.
 I hope he's happy!
 </span>
 
+-->
+
+## Getting Help
+
+> - CAPS
+> - Seeking support
+> - Getting rest
+> - Relaxation strategies
+> - Trying to maintain a normal schedule
+
 
 ## Housekeeping
 
-> - Twitter v2 docs
 > - Project planning doc
 > - Self assessment reflection
 
 ## Paper discussion
 
+> - Jin
 
 
 ## Review

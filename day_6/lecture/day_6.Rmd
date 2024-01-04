@@ -30,9 +30,7 @@ I accidentally swallowed a bunch of scrabble tiles.
 
 > - Project Planning Doc
 > - Self assessment doc
-> - Twitter API keys
 > - October Break next week
-> - Short class on Thursday
 
 <!--
 ## Paper Discussion

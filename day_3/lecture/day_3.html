@@ -49,7 +49,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -62,7 +62,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -508,7 +508,7 @@ style.innerHTML = style_script;
 document.getElementsByTagName('head')[0].appendChild(style);
 </script>
 
-    <script src="../../libs/header-attrs-2.14.1.9000/header-attrs.js"></script>
+    <script src="../../libs/header-attrs-2.19.2/header-attrs.js"></script>
 </head>
 <body>
   <div class="reveal">
@@ -523,7 +523,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="dad-joke" class="slide level2">
 <h2>Dad Joke</h2>
 <ul>
-<li class="fragment">What did the French man say when he went down the slide?</li>
+<li class="fragment">What did the French man say when he went down the
+slide?</li>
 <li class="fragment">Yeeesss!</li>
 </ul>
 </section>
@@ -538,6 +539,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">It’s OK to be lost</li>
 <li class="fragment">The class is front-loaded; we will slow down</li>
+<li class="fragment">Move catch up week?</li>
 </ul></li>
 </ul>
 </section>
@@ -547,9 +549,14 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Importing</li>
 <li class="fragment">Comments in code</li>
 <li class="fragment">Functions</li>
+<li class="fragment">Bit by Bit reading 🤦‍♂️</li>
 </ul>
+</section>
+<section id="comments-and-functions" class="slide level2">
+<h2>Comments and functions</h2>
 <div class="fragment">
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exclaim(s):</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Changes a normal string into an exclamation!</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  s <span class="op">=</span> s.upper()</span>
@@ -585,7 +592,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h1>Paper discussion</h1>
 
 </section>
-<section id="analyzing-large-datasets-is-different" class="slide level2">
+<section id="analyzing-large-datasets-is-different"
+class="slide level2">
 <h2>Analyzing large datasets is different</h2>
 <ul>
 <li class="fragment">Often trace data is complete*
@@ -605,8 +613,10 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h2>Network analysis</h2>
 <ul>
 <li class="fragment">Turn relationships into networks</li>
-<li class="fragment">Visual representations can be confusing <img class='fragment' src='images/hairball.png' style="width:60%;"/></li>
-<li class="fragment">Useful when relationships are important part of understanding a process</li>
+<li class="fragment">Visual representations can be confusing
+<img class='fragment' src='images/hairball.png' style="width:60%;"/></li>
+<li class="fragment">Useful when relationships are important part of
+understanding a process</li>
 </ul>
 </section>
 <section id="text-analysis" class="slide level2">
@@ -623,9 +633,12 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <h2>Topic modeling</h2>
 <p><img class='fragment' src='images/lda.png' style="width:60%;"/></p>
 <ul>
-<li class="fragment">Goal is to find a set of <em>k</em> topics where each topic is made up of a combination of terms and each document is made up of a combination of topics.</li>
+<li class="fragment">Goal is to find a set of <em>k</em> topics where
+each topic is made up of a combination of terms and each document is
+made up of a combination of topics.</li>
 <li class="fragment">Requires a lot of interpretation</li>
-<li class="fragment">Computational grounded theory (Nelson, 2017) is one attempt to get “best of both worlds”</li>
+<li class="fragment">Computational grounded theory (Nelson, 2017) is one
+attempt to get “best of both worlds”</li>
 </ul>
 </section>
 <section id="prediction-vs-inference" class="slide level2">
@@ -633,15 +646,18 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul>
 <li class="fragment">Differences in focus
 <ul>
-<li class="fragment">Good at predicting outcomes or understanding the process that leads to outcomes</li>
+<li class="fragment">Good at predicting outcomes or understanding the
+process that leads to outcomes</li>
 </ul></li>
 <li class="fragment">Prediction approaches
 <ul>
 <li class="fragment">Training data and test data</li>
 <li class="fragment">Cross-validation and overfitting</li>
-<li class="fragment">Cares less about interpretability of the model or connection to theory</li>
+<li class="fragment">Cares less about interpretability of the model or
+connection to theory</li>
 </ul></li>
-<li class="fragment">Some of these can (and should!) be used by social scientists.</li>
+<li class="fragment">Some of these can (and should!) be used by social
+scientists.</li>
 </ul>
 </section>
 <section id="reproducibility" class="slide level2">
@@ -662,14 +678,39 @@ document.getElementsByTagName('head')[0].appendChild(style);
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 
 

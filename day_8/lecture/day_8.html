@@ -455,7 +455,8 @@ document.getElementsByTagName('head')[0].appendChild(style);
 
 <section id="dad-joke" class="slide level2">
 <h2>Dad Joke</h2>
-<p>Within minutes, the detective knew exactly what the murder weapon was.</p>
+<p>Within minutes, the detective knew exactly what the murder weapon
+was.</p>
 <p><span class="fragment"> It was a brief case. </span></p>
 </section>
 <section id="housekeeping" class="slide level2">
@@ -466,11 +467,6 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <li class="fragment">Feedback on planning documents next week</li>
 </ul></li>
 </ul>
-</section>
-<section id="paper-discussion" class="slide level2">
-<h2>Paper Discussion</h2>
-<p>Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28.</p>
-<p>Discussant: Jeremy</p>
 </section>
 <section id="scraping-data" class="slide level2">
 <h2>Scraping Data</h2>
@@ -486,6 +482,12 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <section id="hw-review" class="slide level2">
 <h2>HW Review</h2>
 </section>
+<section id="paper-discussion" class="slide level2">
+<h2>Paper Discussion</h2>
+<p>Kieran Healy and James Moody (2014). “Data Visualization in
+Sociology.” American Review of Sociology. 40: 105-28.</p>
+<p>Discussant: Jeremy</p>
+</section>
     </div>
   </div>
 
@@ -497,14 +499,39 @@ document.getElementsByTagName('head')[0].appendChild(style);
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+        // Display a presentation progress bar
+        progress: true,
         // Push each slide change to the browser history
         history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Enable the slide overview mode
+        overview: true,
         // Vertical centering of slides
         center: false,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
         // Transition style
         transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
         // Transition style for full page slide backgrounds
         backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
 
 
 

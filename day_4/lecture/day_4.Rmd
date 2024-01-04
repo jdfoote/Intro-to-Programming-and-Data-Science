@@ -31,9 +31,8 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Housekeeping
 
-> - Signing up for Twitter
+> - Signing up for Reddit
 > - Slowing down soon!
-> - Project idea feedback coming very soon (Sorry!)
 > - New papers to read
 
 ## Reflection on how things are going

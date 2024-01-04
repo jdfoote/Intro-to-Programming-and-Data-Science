@@ -32,17 +32,10 @@ My neighbor had the nerve to ring my doorbell at 3 o'clock in the morning.
 
 > - Self-assessment reflection + proposal
 
-# Ethics Discussion
-
-Vitak, J., Shilton, K., & Ashktorab, Z. (2016). Beyond the Belmont Principles: Ethical Challenges, Practices, and Beliefs in the Online Data Research Community. Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work & Social Computing, 941–953. 
-
-Discussant: Keqin
-
-
 ## Working with online data
 
 > - Save the raw data
-> - Make your process reproducible
+> - Make your process as reproducible as possible
 
 ## Limitations of online data
 
@@ -52,6 +45,10 @@ Discussant: Keqin
 
 # Code Challenge Review
 
+
+# Ethics Discussion
+
+Vitak, J., Shilton, K., & Ashktorab, Z. (2016). Beyond the Belmont Principles: Ethical Challenges, Practices, and Beliefs in the Online Data Research Community. Proceedings of the 19th ACM Conference on Computer-Supported Cooperative Work & Social Computing, 941–953. 
 
 
 ## Ethics in online data

@@ -7,4 +7,5 @@ assignments/
 twitter_authentication.py
 reddit_auth.py
 .vscode/
-day_8/reddit_authentication.py
+reddit_authentication.py
+day_9/*.csv

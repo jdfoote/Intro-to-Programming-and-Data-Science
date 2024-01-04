@@ -36,13 +36,6 @@ It was a brief case.
 > - Self-assessment reflection and planning document
 >	- Feedback on planning documents next week
 
-## Paper Discussion
-
-Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28. 
-
-Discussant: Jeremy
-
-
 ## Scraping Data
 
 > - Three main ways of getting web data:
@@ -50,4 +43,11 @@ Discussant: Jeremy
 >	- APIs
 >	- Scraping
 
+
 ## HW Review
+
+## Paper Discussion
+
+Kieran Healy and James Moody (2014). “Data Visualization in Sociology.” American Review of Sociology. 40: 105-28. 
+
+Discussant: Jeremy

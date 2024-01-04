@@ -33,19 +33,16 @@ Not Happy.
 
 ## Housekeeping
 
-> - Final project examples
->	- Please don't share beyond class members
-> - Reach out for help if needed!!
+> - Reach out for help with final project!
 
 ## Housekeeping
 
 > - Intermediate Python
->	- Regular expressions, list comprehensions, classes, debugging, finding help
->	- What else should I include?
-> - Self-assessment reflections
+>	- Regular expressions, list comprehensions, classes, debugging
+>   - Agent-based modeling, cluster computing, more computational text analysis
+>   - Some resources on the wiki (Advanced Computational Communication)
 > - Project presentation signup
-> - tinyurl.com/com674fp
-> - Presentation on Thurs?
+>   - tinyurl.com/com674fp
 
 ## Web scraping
 
@@ -62,7 +59,7 @@ Not Happy.
 
 > - Meh :)
 > - My workflow uses Python to collect data and create measures, then R to do statistics and create visualizations
-> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files*!
+> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files!
 > - Python is great for ML, OTOH
 
 

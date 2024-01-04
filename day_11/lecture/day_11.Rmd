@@ -5,11 +5,11 @@ output:
     theme: white
     progress: true
     transition: convex
-    self_contained: false
+    self_contained: true
     css: ../../libs/css/custom_css.css
-    reveal_plugins: ["notes"]
-    lib_dir: ../../libs
-    allow_uptree_lib_dir: true
+#    reveal_plugins: ["notes"]
+#    lib_dir: ../../libs
+#    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -37,9 +37,6 @@ When I was a kid we were so poor that we had to share a calculator, and the "X" 
 >	- Stats
 >	- Screen scraping
 >	- Additional topics
-
-
-## Intro to BERT
 
 ## Cleaning data
 

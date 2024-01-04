@@ -32,6 +32,8 @@ He would stop at nothing to avoid them
 
 ## Housekeeping
 
+> - No class on Tuesday
+> - Finally finished SAR feedback
 > - IRB Discussion
 > - Ask for help
 > - Rough draft for peer feedback on December 1?
@@ -55,11 +57,6 @@ He would stop at nothing to avoid them
 > - Run code in order
 > - Write comments! (or text in Jupyter)
 > - Advanced mode: Makefiles, knitr
-
-
-
-
-
 
 ## Paper Discussion
 

@@ -1,12 +1,14 @@
 ---
-pagetitle: COM 674
+title: COM 674
 output: 
   revealjs::revealjs_presentation:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../resources/css/custom_css.css
+    self_contained: false
+    css: ../../libs/css/custom_css.css
+    lib_dir: ../../libs
+    allow_uptree_lib_dir: True
 ---
 
 ```{r setup, include=FALSE}
@@ -22,28 +24,23 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Dad Joke
 
-Shout out to people wondering what the opposite of in is.
+Say "mucho" to your friends who speak Spanish.
+
+<span class='fragment'>It means a lot to them</span>
 
 
 ## Housekeeping
 
-> - Intermediate Python
->	- I will post videos / resources on the wiki next week
->	- Regular expressions, list comprehensions, classes, debugging, finding help
->	- What else should I include?
-> - Self-assessment reflections
-> - What did y'all use for git? I'd like to point future students to resources
+> - Ethics discussion on Thursday
+> - Presentations next week (~8 minutes each)
+>   - Focus on 1-2 key points
+> - Final project and SAR due the next week (~December 13)
 
-## Web scraping
+## Reflection
 
-> - Python impersonates a web browser
-> - HTML instead of JSON
-> - requests
-> - BeautifulSoup
-> - Selenium
-> - scrapy
-> - splinter
+> - What topics do you wish we covered in class?
+> - Are there topics you'd like help finding resources for?
 
+## Plan for the day
 
-## HW Review
-
+> - Co-working

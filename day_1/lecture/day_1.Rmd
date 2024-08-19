@@ -94,7 +94,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Getting kind of stale
 >   - Help me find new things to read!
-> - Sign up to present on Google Spreadsheet (up to 2 people)
+> - Sign up to present twice on Google Spreadsheet
 >   - Present the work as though you were the researcher
 >   - Everyone else will skim and be prepared to ask questions
 
@@ -104,7 +104,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Jupyter Notebooks
 > - Suggested approach:
 >	- Work with a partner
->   - Turn on Github Copilot
+> - Use AI (ChatGPT, Github Copilot, Claude, etc)
 >     - Make sure you understand the result!
 >	- Ask questions on Element
 >	- Look up solutions (where available)
@@ -112,7 +112,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ## Coding Challenge Reviews
 
 > - The coldcaller will choose someone to share in class
-> - Rotation for who is assigned to submit / curate solution on Element
+> - Do you want solutions posted as well? We can use Element rooms
 
 
 ## Final Project
@@ -122,13 +122,14 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 >	- Short intro + Methods + Result section of paper
 > - Replication
 > - Do what is best for your future goals
+>   - Let's meet if you have questions
 
 ## Project Milestones
 
 > - Final project
->	- Identify a dataset and general plan (September 6)
->	- Project planning doc (October 18)
->	- Project presentation + report (December 6 and 8)
+>	- Identify a dataset and general plan (September 5)
+>	- Project planning doc (October 15)
+>	- Project presentation + report (December 3 and 5)
 
 ## Grades
 

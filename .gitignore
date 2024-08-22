@@ -9,3 +9,4 @@ reddit_auth.py
 .vscode/
 reddit_authentication.py
 day_9/*.csv
+day_*files/

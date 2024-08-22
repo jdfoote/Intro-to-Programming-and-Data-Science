@@ -1,15 +1,13 @@
 ---
-pagetitle: Welcome to COM 674
-output: 
-  revealjs::revealjs_presentation:
+pagetitle: Welcome to COM 674!
+date: Week 1
+format: 
+  revealjs:
+    css: ./resources/custom_css.css
     theme: white
     progress: true
     transition: convex
-    self_contained: false
     reveal_plugins: ['notes']
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs
-    allow_uptree_lib_dir: True
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +27,7 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 <div class='container'>
 <div class='col fragment'>
-<img src='./images/the_fam.jpg'/>
+<img src='./images/the_fam.jpg' style='max-width:200px;'/>
 </div>
 <div class='col fragment'>
 <img src='./images/sna.png' style='max-width:250px;'>

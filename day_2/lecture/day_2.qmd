@@ -1,7 +1,7 @@
 ---
 title: Day 2
-output: 
-  revealjs::revealjs_presentation:
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
@@ -9,7 +9,6 @@ output:
     reveal_plugins: ['notes']
     css: ../../libs/css/custom_css.css
     lib: ../../libs
-    allow_uptree_lib_dir: true
 ---
 
 ```{r setup, include=FALSE}
@@ -53,13 +52,17 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Topic review
 > - Problem set review
 
+## Topic Review
+
+> - What topics do you want to review?
+
 
 ## HW Review
 
 > - Start with small group discussions
 > - Select respondents by bot
 >	- Identify things that you are still confused about
-> - Person assigned will make sure there is a good response on Element
+> - Person chosen will make sure there is a good response on Element
 
 ## Wordplay project
 

@@ -1,14 +1,12 @@
 ---
-pagetitle: COM 674
-output: 
-  revealjs::revealjs_presentation:
+title: Week 3!
+format: 
+  revealjs:
+    css: "../../libs/css/custom_css.css"
     theme: white
     progress: true
     transition: convex
-    self_contained: false
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs
-    allow_uptree_lib_dir: true
+    reveal_plugins: ['notes']
 ---
 
 ```{r setup, include=FALSE}
@@ -21,7 +19,6 @@ gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
 wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
-# Week 3!
 
 ## Dad Joke
 
@@ -42,8 +39,6 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 > - Importing
 > - Comments in code
-> - Functions
-> - Bit by Bit reading 🤦‍♂️
 
 ## Comments and functions
 

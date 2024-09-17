@@ -1,13 +1,14 @@
 ---
-title: COM 674
-output: 
-  revealjs::revealjs_presentation:
+title: "Week 5: Dictionaries and Tuples"
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs/
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
 ---
 
 ```{r setup, include=FALSE}
@@ -33,10 +34,11 @@ Brochure
 
 > - Catch up week next week
 >   - Review and regroup
+> - Reddit checkin
 
 ## HW Review
 
-> - Try discussing in groups for 5 minutes first?
+> - Things to be sure to cover?
 
 
 ## Paper discussion

@@ -1,14 +1,16 @@
 ---
-pagetitle: COM 674
-output: 
-  revealjs::revealjs_presentation:
+title: "Week 4: Files"
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs/
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -21,8 +23,6 @@ wrapify <- function (x) {paste("{", x, "}", sep="")}
 p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 ```
 
-# Day 4: Files
-
 ## Weekly Dad Joke
 
 - My girlfriend left me because I'm insecure...
@@ -34,6 +34,8 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 > - Signing up for Reddit
 > - Slowing down soon!
 > - New papers to read
+
+## Julius on Computational Grounded Theory
 
 ## Reflection on how things are going
 

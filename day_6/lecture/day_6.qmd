@@ -1,12 +1,14 @@
 ---
-title: Pandas and Dataframes
-output: 
-  revealjs::revealjs_presentation:
+title: "Week 6: Pandas and Dataframes"
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
-    self_contained: true
-    css: ../../libs/css/custom_css.css
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
 ---
 
 ```{r setup, include=FALSE}

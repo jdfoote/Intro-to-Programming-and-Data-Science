@@ -1,0 +1,35 @@
+---
+title: COM 674 - Day 7
+format: 
+  revealjs:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
+---
+
+
+## Dad Joke
+
+A thief stole my anti-depressant medication.
+
+<span class='fragment'>
+I hope he's happy!
+</span>
+
+
+
+## Housekeeping
+
+> - Project planning doc
+> - Self assessment reflection
+> - Plan for the rest of the semester
+
+## Paper discussion
+
+
+
+## Review

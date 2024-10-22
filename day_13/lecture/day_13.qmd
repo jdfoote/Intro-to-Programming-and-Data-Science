@@ -1,0 +1,86 @@
+---
+title: Code Organization and Reproducibility
+format: 
+  revealjs:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+I was robbed by 6 dwarfs today.
+
+<span class='fragment'>
+Not Happy.
+</span>
+
+
+
+## Housekeeping
+
+> - Reach out for help with final project!
+
+## Housekeeping
+
+> - Intermediate Python
+>	- Regular expressions, list comprehensions, classes, debugging
+>   - Agent-based modeling, cluster computing, more computational text analysis
+>   - Some resources on the wiki (Advanced Computational Communication)
+> - Project presentation signup
+>   - tinyurl.com/com674fp
+
+## Web scraping
+
+> - Python impersonates a web browser
+> - HTML instead of JSON
+> - requests
+> - BeautifulSoup
+> - Selenium
+> - scrapy
+> - splinter
+
+## Principles for code organization
+
+> - 3 directories
+>	- code
+>	- data
+>	- paper
+
+
+## Reproducible workflows and best practices
+
+> - The idea is to be able to fix any step in the workflow and have the rest run with minimal problems
+>	- Data updates
+>	- Bugs
+>	- Changes to measures or questions
+> - Save raw data
+> - Run code in order
+> - Write comments! (or text in Jupyter)
+> - Advanced mode: Makefiles, knitr
+
+## Statistics in Python
+
+> - Meh :)
+> - My workflow uses Python to collect data and create measures, then R to do statistics and create visualizations
+> - Can also export to SPSS, Stata, or whatever. Everything reads CSV files!
+> - Python is great for ML, OTOH
+
+
+## HW Review
+

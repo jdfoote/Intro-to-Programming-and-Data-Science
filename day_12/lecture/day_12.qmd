@@ -1,0 +1,105 @@
+---
+title: COM 674
+format: 
+  revealjs:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+When I was a kid we were so poor that we had to share a calculator, and the "X" button didn't even work.
+
+<span class='fragment'> Times were hard. </span>
+
+## Housekeeping
+
+> - Should have data by now
+> - The rest of the class
+>	  - Git
+>	  - Additional topics
+
+## Cleaning data
+
+> - Why is data 'dirty'?
+>	- Errors in transcription
+>	- Bugs in software that produced it
+>	- Missing data (e.g., when a date is unknown it's recoded as Jan 1)
+>	- Can't be read by software
+>	  - Wrong date format
+>	  - Multiple age formats - e.g., '4', '4 yo', '4 years'
+>	- Observations that shouldn't be in the analysis
+>	- Inappropriate for statistical tests
+>	  - log-transformations
+>	  - Coding groups (e.g., high-risk and low-risk)
+
+## Operationalization
+
+> - Making a construct measurable
+>	- Constructs are not empirical and can't be tested directly
+>	- We must argue that our measures represent or at least are correlated with the concepts we really care about
+>	- Hypotheses relate concepts together, e.g., "socially cohesive groups are more willing to contribute to shared goals"
+>	- In order to test this, need to argue that you have something that represents social cohesion, and something that represents shared goals.
+
+## Online data
+
+> - Online data is "raw"
+>	- This is generally wonderful - we have actual conversations, full text, etc.
+> - However, it isn't made for researchers
+>	- It isn't designed to measure a construct
+>	- We have to do the work to create measures that measure them (and recognize when we can't)
+
+## HW Review
+
+
+## Papers
+
+Sara Klingenstein, Tim Hitchcock, and Simon DeDeo. 2014. The civilizing process in London’s Old Baily. Proceedings of the National Academy of Sciences
+
+
+## How can we detect changes in culture?
+
+> - Digitization of historical records allows for comparison across time
+>	- Google N-gram viewer
+>	- Censuses
+> - This paper uses court transcripts from London's Old Bailey courthouse from 1760s-1910s
+
+## Violent and non-violent offenses are talked about differently
+
+<img src='images/old_bailey.jpg' style='width:35%;'/>
+
+## Some questions
+
+> - What are some of the dangers of doing this kind of work?
+> - What are some computational methods that are becoming "normalized" in your discipline?
+
+
+## Merton Paper
+
+Merton, Robert K. 1948. The Bearing of Empirical Research upon the Development of Social Theory. American Sociological Review.
+
+## Empirical research for developing theory
+
+> - Empirical work doesn't just verify/test theories
+> - Serendipity: Something odd in data that needs an explanation
+> - Recasting: New aspects become more salient
+> - Refocusing: Advances in procedures lead to attention where things can be measured/tested
+> - Clarification: Operationalizing concepts requires drawing boundaries around them
+
+

@@ -1,0 +1,204 @@
+% Some article styles and page layout tweaks for the LaTeX Memoir
+% class.
+%
+% Copyright 2009-2018 Benjamin Mako Hill <mako@atdot.cc>
+% Copyright 2008-2009 Kieran Healy <kjhealy@soc.duke.edu>
+
+% Distributed as free software under the GNU GPL v3
+
+% This file was originally based on one by Kieran Healy
+% available here: http://github.com/kjhealy/latex-custom-kjh/
+
+%%% Custom styles for headers and footers
+%%% Basic 
+
+\makepagestyle{cdsc-page}
+%\makeevenfoot{cdsc-page}{\thepage}{}{}
+%\makeoddfoot{cdsc-page}{}{}{\thepage}
+%\makeheadrule{cdsc-page}{\textwidth}{\normalrulethickness}
+\newcommand{\@cdscmarks}{%
+  \let\@mkboth\markboth
+  \def\chaptermark##1{%
+    \markboth{%
+      \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+          \thechapter. \ %
+        \fi
+      \fi
+      ##1}{}}
+  \def\sectionmark##1{%
+    \markright{##1}}
+}
+\makepsmarks{cdsc-page}{\@cdscmarks}
+\makepsmarks{cdsc-page}{}
+\makeevenhead{cdsc-page}{}{}{\scshape\thepage}
+\makeoddhead{cdsc-page}{}{}{\scshape\thepage}
+
+%%% version control info in footers; requires vc package 
+% Make the style for vc-git revision control headers and footers
+\makepagestyle{cdsc-page-git}
+\newcommand{\@gitmarks}{%
+  \let\@mkboth\markboth
+  \def\chaptermark##1{%
+    \markboth{%
+      \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+          \thechapter. \ %
+        \fi
+      \fi
+      ##1}{}}
+  \def\sectionmark##1{%
+    \markright{##1}}
+}
+\makepsmarks{cdsc-page-git}{\@gitmarks}
+\makeevenhead{cdsc-page-git}{}{}{\scshape\thepage}
+\makeoddhead{cdsc-page-git}{}{}{\scshape\thepage}
+\makeevenfoot{cdsc-page-git}{}{\texttt{\footnotesize{\textcolor{BrickRed}{git revision \VCRevision\ on \VCDateTEX}}}}{}
+\makeoddfoot{cdsc-page-git}{}{\texttt{\footnotesize \textcolor{BrickRed}{git revision \VCRevision\ on \VCDateTEX}}}{}
+
+%%% print a datestamp from ShareLaTeX
+\makepagestyle{cdsc-page-sharelatex}
+\newcommand{\@slmarks}{%
+  \let\@mkboth\markboth
+  \def\chaptermark##1{%
+    \markboth{%
+      \ifnum \c@secnumdepth >\m@ne
+        \if@mainmatter
+          \thechapter. \ %
+        \fi
+      \fi
+      ##1}{}}
+  \def\sectionmark##1{%
+    \markright{##1}}
+}
+\makepsmarks{cdsc-page-sharelatex}{\@slmarks}
+\makeevenhead{cdsc-page-sharelatex}{}{}{\scshape\thepage}
+\makeoddhead{cdsc-page-sharelatex}{}{}{\scshape\thepage}
+\makeevenfoot{cdsc-page-sharelatex}{}{\texttt{\footnotesize{\textcolor{BrickRed}{Buildstamp/Version:~\pdfdate}}}}{}
+\makeoddfoot{cdsc-page-sharelatex}{}{\texttt{\footnotesize{\textcolor{BrickRed}{Buildstamp/Version:~\pdfdate}}}}{}
+
+%% Create a command to make a note at the top of the first page describing the
+%% publication status of the paper. 
+\newcommand{\published}[1]{% 
+   \gdef\puB{#1}} 
+   \newcommand{\puB}{} 
+   \renewcommand{\maketitlehooka}{% 
+       \par\noindent\footnotesize \puB} 
+
+\makepagestyle{cdsc-page-memo}
+\makeevenhead{cdsc-page-memo}{}{}{}
+\makeoddhead{cdsc-page-memo}{}{}{} 
+\makeevenfoot{cdsc-page-memo}{}{\scshape \thepage/\pageref{LastPage}}{}
+\makeoddfoot{cdsc-page-memo}{}{\scshape \thepage/\pageref{LastPage}}{}
+
+\usepackage{lastpage}
+\usepackage{datetime}
+
+% blank footnote
+% Use \symbolfootnote[0]{Footnote text} for a blank footnote. 
+% Useful for initial acknowledgment note.
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+
+% put a period after the section numbers
+\setsecnumformat{\csname the#1\endcsname.\enspace}
+
+% set fonts to garamond and helvetica
+\renewcommand{\rmdefault}{ugm}
+\renewcommand{\sfdefault}{phv}
+
+% material shared between the two modes
+
+\setsubsecheadstyle{\normalsize\itshape} 
+\setaftersubsubsecskip{-1em}
+\setsubsubsecheadstyle{\small\bfseries}
+\renewcommand{\printchaptername}{} 
+\renewcommand{\chapternamenum}{} 
+\renewcommand{\chapnumfont}{\chaptitlefont} 
+\renewcommand{\printchapternum}{\chapnumfont \thechapter\space} 
+\renewcommand{\afterchapternum}{} 
+\renewcommand{\printchaptername}{\secheadstyle}
+\renewcommand{\cftchapterfont}{\normalfont} 
+\renewcommand{\cftchapterpagefont}{\normalfont\scshape} 
+\renewcommand{\cftchapterpresnum}{\scshape} 
+\captiontitlefont{\small}
+
+% turn off chapter numbering
+\counterwithout{section}{chapter}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+ 
+% supress chapter numbers 
+\maxsecnumdepth{chapter} 
+\setsecnumdepth{chapter}
+
+% for numbered sections and subsections:
+% (a) comment out the above stanza; (b) uncomment the one below
+% \maxsecnumdepth{subsection} 
+% \setsecnumdepth{subsection}
+
+% set name of bibliography to 'references'
+\renewcommand{\bibname}{References}
+
+% >> cdsc-article <<
+\makechapterstyle{cdsc-article}{
+
+  % section heading sytle
+  \setsecheadstyle{\large\scshape} 
+ 
+ % reduce skip after section heading
+  \setaftersecskip{1.7ex}
+ 
+  % Title flush left
+  \pretitle{\flushleft\LARGE \itshape}
+  \posttitle{\par\vskip 0.5em}
+  \preauthor{\flushleft  \large \lineskip 1em}
+  \postauthor{\par\lineskip 1em}
+  \predate{\flushleft\footnotesize\vspace{0.65em}}
+  \postdate{\par\vskip 1em}
+ 
+  % 'abstract' title, bigger skip from title
+  \renewcommand{\abstractname}{Abstract:}
+  \renewcommand{\abstractnamefont}{\normalfont\small\bfseries}
+  \renewcommand{\abstracttextfont}{\normalfont\small}
+  \setlength{\absparindent}{0em}
+  \setlength{\abstitleskip}{-1.5em}
+  \abstractrunin
+
+  % this is the default page style for chapters
+  \pagestyle{cdsc-page}
+
+}
+
+% >> cdsc-memo <<
+\makechapterstyle{cdsc-memo}{
+
+  % section heading sytle
+  \setsecheadstyle{\large\sffamily\bfseries\MakeUppercase} 
+
+  % reduce skip after section heading
+  \setaftersecskip{1pt}
+  \setbeforesecskip{-1em}
+ 
+  % 'abstract' title, bigger skip from title
+  % \renewcommand{\maketitle}{\{\preauthor \theauthor\} \hfill \thetitle}
+  \renewcommand{\maketitle}{
+    {\Large\sffamily\bfseries\MakeUppercase\thetitle} \hfill
+    {\Large\sffamily\MakeUppercase\theauthor}
+    \vskip 0.7em}
+  \renewcommand{\abstractname}{\normalfont\scriptsize\noindent}
+  \renewcommand{\abstracttextfont}{\normalfont\scriptsize}
+  \abstractrunin
+
+  % set name of bibliography to 'references'
+  \renewcommand{\bibname}{References}
+  
+  \parindent 0pt
+
+  % this is the default page style for chapters
+  \pagestyle{cdsc-page-memo}
+
+}
+
+\endinput
+

@@ -1,14 +1,14 @@
 ---
 title: Intro to APIs
-output: 
-  revealjs::revealjs_presentation:
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
     self_contained: false
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs/
-    allow_uptree_lib_dir: true
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
 ---
 
 ```{r setup, include=FALSE}
@@ -33,8 +33,10 @@ It was a brief case.
 
 ## Housekeeping
 
-> - Self-assessment reflection and planning document
->	- Feedback on planning documents next week
+> - Self-assessment reflection and planning documents due
+>	- Feedback on planning documents - during class on October 31 (unless you want feedback sooner)
+> - Some adjustments - extra day for computational text analysis, moving Stats and ML to optional
+> - Are people going to NCA?
 
 ## Scraping Data
 

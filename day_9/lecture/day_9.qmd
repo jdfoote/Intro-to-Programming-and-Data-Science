@@ -1,14 +1,14 @@
 ---
 title: APIs continued
-output: 
-  revealjs::revealjs_presentation:
+format: 
+  revealjs:
     theme: white
     progress: true
     transition: convex
     self_contained: false
-    css: ../../libs/css/custom_css.css
-    lib_dir: ../../libs/
-    allow_uptree_lib_dir: true
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
 ---
 
 ```{r setup, include=FALSE}
@@ -24,9 +24,9 @@ p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
 
 ## Dad Joke
 
-My neighbor had the nerve to ring my doorbell at 3 o'clock in the morning.
+I married my wife for her looks. 
 
-<span class='fragment'> Luckily I was still up playing the drums. </span>
+<span class='fragment'> But not the ones she's been giving me lately! </span>
 
 ## Housekeeping
 

@@ -1,0 +1,36 @@
+---
+title: COM 674 - Day 10
+format: 
+  revealjs:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+Did you hear about the mathematician who was afraid of negative numbers?
+
+<span class='fragment'>
+He would stop at nothing to avoid them
+</span>
+
+
+## Housekeeping
+
+

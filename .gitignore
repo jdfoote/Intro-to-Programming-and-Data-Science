@@ -12,3 +12,6 @@ day_9/*.csv
 day_*files/
 
 /.quarto/
+anthropic_credentials.py
+day_11/hobbies.csv
+day_11/purdue_iu_comments_hobbies.csv

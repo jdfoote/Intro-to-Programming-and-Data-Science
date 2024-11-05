@@ -1,0 +1,43 @@
+---
+title: Computational Text Analysis
+format: 
+  revealjs:
+    theme: white
+    progress: true
+    transition: convex
+    self_contained: false
+    reveal_plugins: ['notes']
+    css: "/libs/css/custom_css.css"
+    lib: /libs
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_knit$set(root.dir = './')
+
+f <- function (x) {formatC(x, format="d", big.mark=',')}
+bold <- function(x) {paste('{\\textbf{',x,'}}', sep ='')}
+gray <- function(x) {paste('{\\textcolor{gray}{',x,'}}', sep ='')}
+wrapify <- function (x) {paste("{", x, "}", sep="")}
+p <- function (x) {formatC(x, format='f', digits=1, big.mark=',')}
+```
+
+## Dad Joke
+
+I wanted to marry a Carbon 14 expert but all she wanted to do was date
+
+## Housekeeping
+
+> - Self-assessment reflection - sign up to talk to me
+
+## Text Analysis
+
+> - The Power of Counting
+>   - Word frequency
+>   - Word co-occurrence
+>   - TF-IDF
+> - Sentiment Analysis
+>   - Positive vs. Negative
+> - Classification
+>   - Supervised vs. Unsupervised
+> - Topic Modeling

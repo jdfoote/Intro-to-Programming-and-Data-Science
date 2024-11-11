@@ -36,8 +36,6 @@ opts_chunk$set(fig.path="figures/knitr-")
 
 % import and customize urls
 \usepackage[breaklinks]{hyperref}
-\hypersetup{colorlinks=true, linkcolor=Black, citecolor=Black, filecolor=Blue,
-    urlcolor=Blue, unicode=true}
 
 % list of footnote symbols for \thanks{}
 \makeatletter
@@ -86,41 +84,42 @@ opts_chunk$set(fig.path="figures/knitr-")
 
 \baselineskip 16pt
 
-\title{Twitter at Purdue}
+\title{Are long comments better?}
 \author{Jeremy Foote\\
         \href{mailto:jdfoote@purdue.edu}{jdfoote@purdue.edu}}
 \date{}
 
-\published{\textsc{\textcolor{BrickRed}{This document is an
-  unpublished draft.\\ Please do not distribute or cite without
-  permission.}}}
 
 \maketitle
 
 <<load_data, echo=FALSE, message=FALSE>>=
 library(tidyverse)
-df = read_csv('../data/purdue_tweets.csv')
+raw_df = read_csv('../data/raw_data.csv')
+df = read_csv('../data/processed_data.csv')
 @
 
 \begin{abstract}
-    Which Purdue tweets get the most attention?
+    When looking at Purdue-related conversations on Reddit, do longer comments do better?
 \end{abstract}
 
 \section{Introduction}
 
 
-One might have a number of hypotheses about what influences the number of likes that a tweet receives. In this paper, we show the relationship between the number of followers a user has and how many favorites their tweet receives, using a sample of \Sexpr{nrow(df)} tweets made in and around West Lafayette, Indiana.
+We can think of a number of reasons that longer comments would perform better. For example, people who are willing to put in enough effort to write a long comment have probably thought more carefully about a subject.
+On the other hand, readers may not be willing to read long comments, making them less popular.
 
-\begin{figure}
+In this paper, we show the relationship between comment length and score in a dataset of Purdue-related comments from Reddit. 
+To gather the data, we retrieved all of the comments from the 250 most recent posts on Reddit which included the term "Purdue" on November 11, 2024. 
+This included \Sexpr{nrow(raw_df)} comments from \Sexpr{(length(unique(raw_df$author)))} authors. Figure \ref{fig:scatterplot} shows that there is no relationship between the variables.
+Indeed, the correlation between the two variables is \Sexpr{round(cor(df$score, df$comment_length), 5)}.
 
-<<twitter_plot, echo=FALSE, message=FALSE>>=
-df %>% ggplot(aes(x=followers+1, y = favorite_count)) + 
-geom_point() + scale_x_log10() + theme_minimal()
 
-@
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/score_by_length_scatter}
 
-\label{fig:twitter_plot}
-\caption{The number of followers that a user have is on the X axis, and the number of likes the tweet received is on the Y}
+\label{fig:scatterplot}
+\caption{The score for each comment, based on the length of the comment. There is no relationship between the variables.}
 \end{figure}
 
 
@@ -128,7 +127,7 @@ geom_point() + scale_x_log10() + theme_minimal()
 
 % bibliography here
 \setcounter{biburlnumpenalty}{9001}
-\printbibliography[title = {References}, heading=secbib]
+%\printbibliography[title = {References}, heading=secbib]
 
 
 \end{document}

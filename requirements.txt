@@ -1,0 +1,44 @@
+# Python package requirements for Intro to Programming and Data Science
+# See notebooks in each day's folder for usage context
+
+# HTTP requests
+requests>=2.31.0
+
+# Data analysis and manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Scientific computing
+scipy>=1.11.0
+
+# Machine learning
+scikit-learn>=1.4.0
+
+# Statistical modeling
+statsmodels>=0.14.0
+
+# Natural Language Processing
+nltk>=3.9.3
+
+# Topic modeling
+gensim>=4.3.0
+bertopic>=0.15.0
+hdbscan>=0.8.29
+pyLDAvis>=3.4.0
+
+# Network analysis
+networkx>=3.0
+
+# Reddit API
+praw>=7.7.0
+prawcore>=2.4.0
+
+# Twitter API
+tweepy>=4.14.0
+
+# AI/LLM
+anthropic>=0.28.0
